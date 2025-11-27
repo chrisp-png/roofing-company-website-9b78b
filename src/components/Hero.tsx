@@ -3,7 +3,7 @@ import { Phone, Mail } from 'lucide-react'
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
-      
+
       {/* Background Image */}
       <div
         className="absolute inset-0 opacity-20"
@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
+
         {/* MAIN SEO HEADING */}
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
           Broward & Palm Beach Roofing Contractor
@@ -39,11 +39,11 @@ export default function Hero() {
 
         {/* CTA BUTTONS */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          
+
           {/* Primary CTA */}
           <a
             href="#contact"
-            className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold 
+            className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold
                        hover:bg-red-500 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Schedule a Roof Assessment
@@ -52,18 +52,39 @@ export default function Hero() {
           {/* Call button */}
           <a
             href="tel:754-227-5605"
-            className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 
+            className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20
                        text-white rounded-lg font-semibold hover:bg-white/20 transition-all"
           >
             Call Now: 754-227-5605
           </a>
         </div>
 
-        {/* CONTACT ROW — MUCH LARGER */}
+        {/* CONTACT ROW */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-lg font-medium">
 
           {/* Phone */}
           <div className="flex items-center gap-2">
             <Phone className="w-6 h-6 text-red-500" />
-            <a 
-              href="te
+            <a
+              href="tel:754-227-5605"
+              className="hover:text-red-400 transition-colors"
+            >
+              754-227-5605
+            </a>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center gap-2">
+            <Mail className="w-6 h-6 text-red-500" />
+            <a
+              href="mailto:info@allphaseconstructionusa.com"
+              className="hover:text-red-400 transition-colors"
+            >
+              info@allphaseconstructionusa.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
