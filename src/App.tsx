@@ -12,7 +12,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="min-h-screen bg-slate-950">
-      <Navigation />
+      <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+        <Navigation />
+      </header>
       <Hero />
 
       {/* Residential Section */}
