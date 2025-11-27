@@ -41,8 +41,7 @@ const RoofCalculator: React.FC = () => {
         Roof Investment Calculator
       </h2>
       <p className="mt-3 text-sm text-slate-300">
-        Get a ballpark range for a new roof in South Florida. Exact pricing is
-        confirmed after an on-site inspection, code review, and scope of work.
+        Get a ballpark range for a new roof in South Florida.
       </p>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3 text-xs sm:text-sm">
@@ -76,9 +75,6 @@ const RoofCalculator: React.FC = () => {
             className="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-xs text-slate-50 outline-none focus:border-red-500"
             placeholder="e.g. 2000"
           />
-          <p className="text-[10px] text-slate-500">
-            Tip: Total under-roof area, not just interior living space.
-          </p>
         </div>
 
         <div className="space-y-2">
@@ -95,10 +91,6 @@ const RoofCalculator: React.FC = () => {
             <option value="standard">Standard (simple roof)</option>
             <option value="complex">Complex (hips, valleys, details)</option>
           </select>
-          <p className="text-[10px] text-slate-500">
-            Complex roofs with more cuts, details, or steep pitches require more
-            labor and materials.
-          </p>
         </div>
       </div>
 
@@ -132,10 +124,6 @@ const RoofCalculator: React.FC = () => {
           >
             Schedule On-Site Assessment
           </a>
-          <p className="text-[10px] text-slate-500">
-            Final pricing depends on inspection, wood replacement, code upgrades,
-            and association or commercial requirements.
-          </p>
         </div>
       </div>
     </div>
