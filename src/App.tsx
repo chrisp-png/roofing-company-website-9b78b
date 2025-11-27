@@ -7,6 +7,7 @@ import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import ServiceAreas from "./components/ServiceAreas";
 import Footer from "./components/Footer";
 
 function App() {
@@ -293,6 +294,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <ServiceAreas />
 
       <Footer />
     </div>

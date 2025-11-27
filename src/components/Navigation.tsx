@@ -4,12 +4,36 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [roofTypesOpen, setRoofTypesOpen] = useState(false);
+  const [serviceAreasOpen, setServiceAreasOpen] = useState(false);
 
   const roofTypes = [
     { name: 'Tile', href: '#tile' },
     { name: 'Metal', href: '#metal' },
     { name: 'Shingle', href: '#shingle' },
     { name: 'Flat', href: '#flat' },
+  ];
+
+  const serviceAreas = [
+    { name: 'Boca Raton', href: '/locations/boca-raton-roofing.html' },
+    { name: 'Delray Beach', href: '/locations/delray-beach-roofing.html' },
+    { name: 'Boynton Beach', href: '/locations/boynton-beach-roofing.html' },
+    { name: 'Lake Worth Beach', href: '/locations/lake-worth-beach-roofing.html' },
+    { name: 'West Palm Beach', href: '/locations/west-palm-beach-roofing.html' },
+    { name: 'Wellington', href: '/locations/wellington-roofing.html' },
+    { name: 'Palm Beach Gardens', href: '/locations/palm-beach-gardens-roofing.html' },
+    { name: 'Royal Palm Beach', href: '/locations/royal-palm-beach-roofing.html' },
+    { name: 'Jupiter', href: '/locations/jupiter-roofing.html' },
+    { name: 'Deerfield Beach', href: '/locations/deerfield-beach-roofing.html' },
+    { name: 'Pompano Beach', href: '/locations/pompano-beach-roofing.html' },
+    { name: 'Coconut Creek', href: '/locations/coconut-creek-roofing.html' },
+    { name: 'Coral Springs', href: '/locations/coral-springs-roofing.html' },
+    { name: 'Parkland', href: '/locations/parkland-roofing.html' },
+    { name: 'Margate', href: '/locations/margate-roofing.html' },
+    { name: 'Fort Lauderdale', href: '/locations/fort-lauderdale-roofing.html' },
+    { name: 'Plantation', href: '/locations/plantation-roofing.html' },
+    { name: 'Davie', href: '/locations/davie-roofing.html' },
+    { name: 'Hollywood', href: '/locations/hollywood-roofing.html' },
+    { name: 'Sunrise', href: '/locations/sunrise-roofing.html' },
   ];
 
   const navLinks = [
@@ -69,6 +93,35 @@ export default function Navigation() {
                         className="block px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition-colors duration-200"
                       >
                         {type.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="relative">
+                <button
+                  onMouseEnter={() => setServiceAreasOpen(true)}
+                  onMouseLeave={() => setServiceAreasOpen(false)}
+                  className="px-3 py-1.5 text-sm font-medium text-white rounded-full hover:bg-neutral-800 transition-all duration-200 flex items-center gap-1"
+                >
+                  Service Areas
+                  <ChevronDown className="w-3.5 h-3.5" />
+                </button>
+
+                {serviceAreasOpen && (
+                  <div
+                    onMouseEnter={() => setServiceAreasOpen(true)}
+                    onMouseLeave={() => setServiceAreasOpen(false)}
+                    className="absolute top-full left-0 mt-1 w-56 bg-neutral-900 rounded-lg shadow-lg py-2 border border-neutral-700 max-h-96 overflow-y-auto"
+                  >
+                    {serviceAreas.map((area) => (
+                      <a
+                        key={area.name}
+                        href={area.href}
+                        className="block px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 transition-colors duration-200"
+                      >
+                        {area.name}
                       </a>
                     ))}
                   </div>
@@ -139,6 +192,33 @@ export default function Navigation() {
                       }}
                     >
                       {type.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button
+                onClick={() => setServiceAreasOpen(!serviceAreasOpen)}
+                className="w-full flex items-center justify-between px-3 py-1.5 text-sm font-medium text-white hover:bg-neutral-800 rounded-full transition-all duration-200"
+              >
+                Service Areas
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${serviceAreasOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {serviceAreasOpen && (
+                <div className="mt-1 ml-4 space-y-1 max-h-64 overflow-y-auto">
+                  {serviceAreas.map((area) => (
+                    <a
+                      key={area.name}
+                      href={area.href}
+                      className="block px-3 py-1.5 text-sm font-medium text-white hover:bg-neutral-800 rounded-full transition-all duration-200"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setServiceAreasOpen(false);
+                      }}
+                    >
+                      {area.name}
                     </a>
                   ))}
                 </div>
