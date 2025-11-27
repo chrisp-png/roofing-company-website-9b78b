@@ -171,28 +171,28 @@ function App() {
         </div>
       </section>
 
-      {/* Condo Grants Section */}
-      <section id="condo-grants" className="py-20 bg-black border-b border-neutral-800">
+      {/* Financing Section */}
+      <section id="financing" className="py-20 bg-black border-b border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Condo Association Grants
+              Financing & Programs
             </h2>
             <p className="text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              Helping condo associations secure funding for roofing projects
+              Flexible financing options and grant programs to make your roofing project affordable
             </p>
           </div>
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              All Phase Construction USA assists condo associations in navigating available grants and funding programs for roofing replacements and repairs. Our team has extensive experience working with HOAs and property managers to secure financing options.
+              All Phase Construction USA offers roofing financing options through partner lenders, making it easier to invest in the roof your property needs without delay. We work with homeowners, businesses, and property associations to find flexible payment plans that fit your budget.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              From initial assessments to grant applications and project completion, we provide comprehensive support to make your roofing project affordable and stress-free.
+              We can also help customers understand available grant or incentive programs for condos and associations in Florida. From initial assessments to program applications and project completion, we provide comprehensive support to make your roofing project affordable and stress-free.
             </p>
           </div>
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Let All Phase Construction USA help your association explore funding options. Contact us for a consultation.
+              Let All Phase Construction USA help you explore financing and funding options. Contact us for a consultation.
             </p>
             <a
               href="#contact"

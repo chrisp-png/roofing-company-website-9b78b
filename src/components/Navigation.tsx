@@ -40,7 +40,7 @@ export default function Navigation() {
     { name: 'Residential', href: '#residential' },
     { name: 'Commercial', href: '#commercial' },
     { name: 'HVHZ / Code', href: '#hvhz' },
-    { name: 'Condo Grants', href: '#condo-grants' },
+    { name: 'Financing', href: '#financing' },
     { name: 'Projects', href: '#projects' },
     { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
