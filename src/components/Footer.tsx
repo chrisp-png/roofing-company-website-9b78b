@@ -65,6 +65,7 @@ export default function Footer() {
 
         <div className="border-t border-neutral-800 pt-8 text-center text-neutral-400">
           <p>&copy; {new Date().getFullYear()} All Phase Construction USA, LLC. All rights reserved.</p>
+          <p className="text-[10px] text-neutral-500 mt-2">Licensed in Florida: CGC1526236 • CCC1331464</p>
         </div>
       </div>
     </footer>

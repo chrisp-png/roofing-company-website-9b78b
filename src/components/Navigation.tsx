@@ -30,7 +30,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <a href="#" className="flex flex-col">
               <span className="text-xl font-bold text-white">All Phase Construction USA</span>
-              <span className="text-xs text-neutral-400">Roofing • General Contracting • HVHZ</span>
+              <span className="text-[10px] text-neutral-500">FL CGC1526236 • CCC1331464 • Broward & Palm Beach</span>
             </a>
           </div>
 

@@ -23,6 +23,9 @@ export default function Hero() {
           All Phase Construction USA
           <span className="block text-red-500">Professional Roofing Solutions</span>
         </h1>
+        <p className="text-[10px] text-neutral-400 mb-4 tracking-wide">
+          Serving Broward & Palm Beach • FL Licenses CGC1526236 • CCC1331464
+        </p>
         <p className="text-xl md:text-2xl mb-8 text-neutral-300 max-w-3xl mx-auto leading-relaxed">
           All Phase Construction USA installs code-compliant roofing systems for Broward and Palm Beach Counties from our office in Deerfield Beach, FL.
         </p>
@@ -32,13 +35,13 @@ export default function Hero() {
             href="#contact"
             className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
-            Get Free Quote
+            Schedule an On-Site Roof Assessment
           </a>
           <a
             href="tel:754-227-5605"
             className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-lg font-semibold hover:bg-white/20 transition-all duration-300"
           >
-            Call Now
+            Call 754-227-5605
           </a>
         </div>
 

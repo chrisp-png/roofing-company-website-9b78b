@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <div className="mb-4 text-sm text-neutral-300">
-              Send us a message and a team member from All Phase Construction USA will follow up with you promptly. You can also reach us directly at <a href="mailto:leads@allphaseusa.com" className="text-red-500 hover:text-red-400 transition-colors duration-200">leads@allphaseusa.com</a>
+              Your message will be sent to <a href="mailto:leads@allphaseusa.com" className="text-red-500 hover:text-red-400 transition-colors duration-200">leads@allphaseusa.com</a> and a team member from All Phase Construction USA will follow up with you promptly.
             </div>
             <form action="mailto:leads@allphaseusa.com" method="POST" encType="text/plain" className="space-y-6">
               <div>
@@ -129,6 +129,9 @@ export default function Contact() {
                     <div className="text-neutral-300">
                       590 Goolsby Blvd<br />
                       Deerfield Beach, FL 33442
+                    </div>
+                    <div className="text-[10px] text-neutral-500 mt-2">
+                      FL Licenses: CGC1526236 • CCC1331464
                     </div>
                     <a
                       href="https://maps.apple.com/?address=590%20Goolsby%20Blvd,%20Deerfield%20Beach,%20FL%2033442"
