@@ -110,23 +110,12 @@ const App: React.FC = () => {
             </div>
           </div>
           <nav className="hidden gap-6 text-sm md:flex">
-            <a href="#services" className="hover:text-red-400">
-              Services
-            </a>
-            <a href="#hvhn" className="hover:text-red-400">
-              HVHZ / Code
-            </a>
-            <a href="#grants" className="hover:text-red-400">
-              Condo Grants
-            </a>
-            <a href="#projects" className="hover:text-red-400">
-              Projects
-            </a>
-            <a href="#blog" className="hover:text-red-400">
-              Blog
-            </a>
-            <a href="#contact" className="hover:text-red-400">
-              Contact
+            <a href="#services" className="hover:text-red-400">Services</a>
+            <a href="#hvhn" className="hover:text-red-400">HVHZ / Code</a>
+            <a href="#grants" className="hover:text-red-400">Condo Grants</a>
+            <a href="#projects" className="hover:text-red-400">Projects</a>
+            <a href="#blog" className="hover:text-red-400">Blog</a>
+            <a href="#contact" className="hover:text-red-400">Contact
             </a>
           </nav>
           <a
