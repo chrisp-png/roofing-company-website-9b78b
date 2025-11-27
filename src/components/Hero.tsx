@@ -77,10 +77,10 @@ export default function Hero() {
           <div className="flex items-center gap-2">
             <Mail className="w-6 h-6 text-red-500" />
             <a
-              href="mailto:info@allphaseconstructionusa.com"
+              href="mailto:info@allphaseusa.com"
               className="hover:text-red-400 transition-colors"
             >
-              info@allphaseconstructionusa.com
+              info@allphaseusa.com
             </a>
           </div>
         </div>
