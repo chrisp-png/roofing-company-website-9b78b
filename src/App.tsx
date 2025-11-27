@@ -550,10 +550,36 @@ const App: React.FC = () => {
                 <span className="font-semibold">www.AllPhaseUSA.com</span>
               </p>
               <p className="text-[11px] text-slate-400">
-                Serving Broward and Palm Beach Counties with full roofing and
-                general contracting services, including HOA and condo
-                associations.
+                Serving Broward and Palm Beach Counties with full roofing and general contracting
+                services, including HOA and condo associations, metal conversions, and insurance-driven
+                upgrades in South Florida's High Velocity Hurricane Zone.
               </p>
+
+              <div className="pt-3 border-t border-slate-800 space-y-3">
+                <p className="text-xs text-slate-300 font-semibold">
+                  Find us on the map
+                </p>
+
+                <div className="h-40 w-full overflow-hidden rounded-2xl border border-slate-800">
+                  <iframe
+                    title="All Phase Construction USA - Google Maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.5829799999997!2d-80.14!3d26.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE4JzAwLjAiTiA4MMKwMDgnMjQuMCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="h-full w-full border-0"
+                  ></iframe>
+                </div>
+
+                <a
+                  href="https://maps.apple.com/?address=590%20Goolsby%20Blvd,%20Deerfield%20Beach,%20FL%2033442"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-700 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-slate-200 hover:border-red-500 hover:text-red-300"
+                >
+                  Open in Apple Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>
