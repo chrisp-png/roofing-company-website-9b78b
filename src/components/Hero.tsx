@@ -14,23 +14,22 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Professional Roofing
-          <span className="block text-amber-500">Built to Last</span>
+          All Phase Construction USA
+          <span className="block text-red-500">Professional Roofing Solutions</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          Expert roofing solutions for residential and commercial properties.
-          Quality craftsmanship, reliable service, and lasting protection.
+          All Phase Construction USA installs code-compliant roofing systems for Broward and Palm Beach Counties from our office in Deerfield Beach, FL.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a
             href="#contact"
-            className="px-8 py-4 bg-amber-500 text-slate-900 rounded-lg font-semibold hover:bg-amber-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Get Free Quote
           </a>
           <a
-            href="tel:555-123-4567"
+            href="tel:754-227-5605"
             className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-lg font-semibold hover:bg-white/20 transition-all duration-300"
           >
             Call Now
@@ -39,12 +38,12 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm">
           <div className="flex items-center gap-2">
-            <Phone className="w-5 h-5 text-amber-500" />
-            <span>(555) 123-4567</span>
+            <Phone className="w-5 h-5 text-red-500" />
+            <a href="tel:754-227-5605" className="hover:text-red-500 transition-colors duration-200">754-227-5605</a>
           </div>
           <div className="flex items-center gap-2">
-            <Mail className="w-5 h-5 text-amber-500" />
-            <span>info@roofingpro.com</span>
+            <Mail className="w-5 h-5 text-red-500" />
+            <a href="https://www.AllPhaseUSA.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors duration-200">www.AllPhaseUSA.com</a>
           </div>
         </div>
       </div>
