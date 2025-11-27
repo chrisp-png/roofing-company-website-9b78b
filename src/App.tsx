@@ -176,34 +176,70 @@ function App() {
 
       <Services />
 
-      {/* HVHZ / Code Section */}
-      <section id="hvhz" className="py-20 bg-neutral-950 border-b border-neutral-800">
+      {/* Wind Mitigation Section */}
+      <section id="wind-mitigation" className="py-20 bg-neutral-950 border-b border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              HVHZ / Code Compliance
+              Wind Mitigation — Lower Your Premiums, Protect Your Home
             </h2>
-            <p className="text-xl text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              High Velocity Hurricane Zone certified roofing solutions
-            </p>
           </div>
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              South Florida is designated as a High Velocity Hurricane Zone (HVHZ), requiring special building codes and certifications. All Phase Construction USA's team is fully certified to install HVHZ-compliant roofing systems that meet or exceed Miami-Dade and Broward County requirements.
+              Florida homeowners searching for ways to reduce their insurance premiums often research upgrades like Secondary Water Resistance (SWR), roof-to-wall connections, roof deck re-nailing, and impact-rated window and door protection. These improvements form the backbone of Florida&apos;s wind-mitigation standards.
             </p>
-            <p className="text-lg text-neutral-300 leading-relaxed">
-              All Phase Construction USA ensures your roof meets all local building codes, passes inspections, and provides maximum protection against hurricane-force winds. Our installations come with proper documentation and certification for insurance purposes.
+            <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+              All Phase Construction USA is one of the few dual-licensed Roofing + General Contractors in South Florida, meaning we can legally perform both roofing and structural wind-mitigation upgrades in a single project. No need to hire multiple contractors — one permit, one inspection, one streamlined process.
             </p>
+            <p className="text-lg text-neutral-300 leading-relaxed mb-6">
+              Our wind-mitigation improvements follow Florida Building Code, FEMA, and Citizens Insurance requirements and can qualify homeowners for up to 45% in insurance premium savings, depending on the carrier.
+            </p>
+
+            <div className="bg-neutral-900/50 rounded-xl p-6 mb-6">
+              <h3 className="text-xl font-bold text-white mb-4">Wind Mitigation Upgrades We Provide:</h3>
+              <ul className="space-y-2 text-neutral-300">
+                <li className="flex items-start">
+                  <span className="text-red-500 mr-2">•</span>
+                  <span>Secondary Water Resistance (SWR)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 mr-2">•</span>
+                  <span>Roof deck re-nailing</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 mr-2">•</span>
+                  <span>Roof-to-wall / hurricane strap retrofits</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 mr-2">•</span>
+                  <span>Impact windows, doors, and shutter systems</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 mr-2">•</span>
+                  <span>FBC-compliant roof installations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-neutral-900/50 rounded-xl p-6 mb-6">
+              <h3 className="text-xl font-bold text-white mb-4">Why Choose All Phase:</h3>
+              <p className="text-neutral-300 leading-relaxed mb-2">
+                One contractor. One permit. One inspection.
+              </p>
+              <p className="text-neutral-300 leading-relaxed">
+                Faster, easier, and more cost-effective than hiring a roofer who cannot legally perform structural work.
+              </p>
+            </div>
           </div>
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Ensure your property meets HVHZ requirements. Schedule a code compliance assessment with All Phase Construction USA.
+              Strengthen your roof and lower your insurance premiums — schedule your Wind Mitigation inspection today.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-red-500 transition-colors duration-200 whitespace-nowrap"
             >
-              Schedule an On-Site Roof Assessment
+              Schedule Wind Mitigation Inspection
             </a>
           </div>
         </div>
