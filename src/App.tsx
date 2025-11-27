@@ -196,6 +196,48 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* RESIDENTIAL */}
+      <section
+        id="residential"
+        className="border-b border-slate-800 bg-slate-950"
+      >
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-3xl font-bold text-slate-50">Residential Roofing</h2>
+          <p className="mt-3 max-w-2xl text-sm text-slate-300">
+            We install hurricane-ready roofing systems for single-family homes, duplexes,
+            townhomes, and custom properties throughout Broward and Palm Beach Counties.
+            Every residential project includes photos, inspections, permit handling, and
+            full documentation for insurance.
+          </p>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Tile Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Concrete and clay tile systems designed for aesthetics, durability, and
+                South Florida's HVHZ requirements.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Metal Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Mechanically seamed metal roofs engineered for top wind performance and
+                insurance-driven savings.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Shingle Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Architectural shingles with upgraded underlayments and HVHZ fastening
+                patterns to meet code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="border-b border-slate-800 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
