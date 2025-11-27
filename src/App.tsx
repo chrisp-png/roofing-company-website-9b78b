@@ -27,40 +27,45 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Residential Roofing in Broward &amp; Palm Beach
+              Residential Roofing for South Florida Homeowners
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              High-performance roofing systems for single-family homes, townhomes, and villas across South Florida.
+              Roof replacements and repairs for single-family homes, townhomes, and villas in Broward &amp; Palm Beach Counties.
             </p>
           </div>
 
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              All Phase Construction USA installs and replaces residential roofing systems in communities throughout
-              Broward and Palm Beach Counties — including Deerfield Beach, Boca Raton, Delray Beach, Pompano Beach,
-              Coral Springs, and surrounding areas. We work with tile, metal, shingle, and flat roofs, and we help
-              homeowners take advantage of insurance discounts and wind-mitigation opportunities where available.
+              When you replace the roof on your home, you&apos;re not just buying shingles or tile — you&apos;re protecting your family,
+              your belongings, and one of your biggest investments. All Phase Construction USA helps homeowners choose the right
+              roofing system for their budget, neighborhood, and long-term plans.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              Whether you need a full roof replacement, a storm-damage evaluation, or help understanding your options,
-              our team walks you through each step so you can make a confident, informed decision.
+              We work in communities throughout Deerfield Beach, Boca Raton, Delray Beach, Pompano Beach, Coral Springs, and the
+              surrounding areas. Our team is careful with driveways, landscaping, and outdoor spaces, and we place a strong emphasis
+              on cleanliness, communication, and daily jobsite cleanup.
+            </p>
+            <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+              If your HOA or community association requires approvals, we can help with scope descriptions, documentation, and
+              product details so your project moves forward smoothly. We also offer options in tile, metal, shingle, and flat roofing
+              so you can compare looks, performance, and budget.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              We also handle all permitting, engineering when required, inspections, and wind-mitigation documentation
-              to help our customers maximize potential insurance savings.
+              Behind the scenes, we handle permitting, engineering when required, inspections, and wind-mitigation documentation
+              to help our customers maximize potential insurance savings and reduce stress during the process.
             </p>
           </div>
 
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Not sure which roofing system is best for your home? Have one of our specialists help you compare options,
-              pricing, and potential insurance savings.
+              Not sure where to start with your home&apos;s roof? Have one of our specialists walk you through materials, pricing,
+              and potential insurance and wind-mitigation benefits.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-red-500 transition-colors duration-200 whitespace-nowrap"
             >
-              Talk to a Roofing Specialist
+              Talk to a Residential Roofing Specialist
             </a>
           </div>
         </div>
@@ -74,40 +79,46 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Commercial &amp; Multifamily Roofing
+              Commercial, Condo &amp; HOA Roofing
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              Flat, low-slope, and complex roofing systems for commercial buildings, condos, and associations.
+              Roofing solutions for commercial buildings, multifamily properties, and association communities in South Florida.
             </p>
           </div>
 
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              From retail centers and offices to condo and HOA communities, All Phase Construction USA provides
-              commercial roofing solutions designed to minimize disruption and maximize long-term performance.
-              We install and service flat roofing systems, metal assemblies, and other commercial-grade roof systems
-              that meet South Florida codes and manufacturer requirements.
+              All Phase Construction USA works with property managers, boards, investors, and owners to plan and execute
+              commercial and multifamily roofing projects with minimal disruption. We install flat and low-slope systems,
+              metal assemblies, and other commercial-grade roofing designed for South Florida&apos;s HVHZ requirements.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              Our commercial team coordinates closely with property managers, boards, and engineers to develop
-              clear scopes of work, phasing plans, and communication strategies so your project runs smoothly.
+              Our team helps you navigate specs, manufacturer requirements, and code details while coordinating phasing,
+              staging, safety, and communication for tenants and residents. We can work with your engineer or bring in
+              engineering support when needed to make sure the project is properly documented and ready for permitting.
+            </p>
+            <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+              We understand that board approvals, budgets, and timelines all matter. That&apos;s why we focus on clear scopes
+              of work, realistic schedules, and straightforward proposals that make it easier to explain the project to
+              decision-makers and owners.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              We manage permits, engineering, inspections, and wind-mitigation documentation so your commercial
-              or multifamily project stays code-compliant and efficient from start to final inspection.
+              We manage permits, engineering, inspections, and wind-mitigation documentation so your commercial or association
+              project stays code-compliant and efficient from start to final inspection — including the paperwork your
+              insurance carrier may request.
             </p>
           </div>
 
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Need a proposal for a commercial, condo, or HOA roof project? We can review plans, inspect existing
-              conditions, and prepare a detailed scope and estimate.
+              Managing a commercial, condo, or HOA roof project? We can review plans, inspect existing conditions, and
+              provide a detailed proposal for your board or ownership group.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-red-500 transition-colors duration-200 whitespace-nowrap"
             >
-              Request a Commercial Roof Consultation
+              Request a Commercial / HOA Roof Consultation
             </a>
           </div>
         </div>
