@@ -282,6 +282,52 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* ROOF TYPES */}
+      <section
+        id="roof-types"
+        className="border-b border-slate-800 bg-slate-950"
+      >
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-3xl font-bold text-slate-50">Roof Types We Install</h2>
+          <p className="mt-3 max-w-2xl text-sm text-slate-300">
+            We install every major roofing system in South Florida for both homes and
+            commercial buildings — all engineered to meet HVHZ wind requirements.
+          </p>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Tile Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Concrete & clay tile with foam or mechanical fastening.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Metal Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Mechanically seamed, standing seam, and concealed fastener metal systems.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">Shingle Roofing</h3>
+              <p className="mt-2 text-xs text-slate-300">
+                Architectural and designer shingles with HVHZ fastening.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+              <h3 className="text-sm font-semibold text-slate-50">
+                Flat / Low-Slope Roofing
+              </h3>
+              <p className="mt-2 text-xs text-slate-300">
+                TPO, PVC, modified bitumen, and commercial-grade flat systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="border-b border-slate-800 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
