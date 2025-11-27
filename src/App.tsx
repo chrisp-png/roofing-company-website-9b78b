@@ -60,6 +60,36 @@ const testimonials = [
   },
 ];
 
+const blogPosts = [
+  {
+    title: "Metal vs. Tile Roofs in South Florida (HVHZ Guide)",
+    slug: "metal-vs-tile-roofs-south-florida",
+    description:
+      "Compare lifespan, wind performance, and insurance impact of metal and tile roofs in the High Velocity Hurricane Zone.",
+    date: "November 2025",
+    readTime: "7 min read",
+    url: "/blog/metal-vs-tile-roofs-south-florida.html",
+  },
+  {
+    title: "How Condo & HOA Boards Should Plan a Re-Roof in the HVHZ",
+    slug: "hoa-condo-reroof-planning-hvhz",
+    description:
+      "A step-by-step roadmap for boards and property managers: bids, engineering, permits, phasing, and resident communication.",
+    date: "November 2025",
+    readTime: "9 min read",
+    url: "/blog/hoa-condo-reroof-planning-hvhz.html",
+  },
+  {
+    title: "My Safe Florida Home & Condo – Roofing Upgrades and Grants",
+    slug: "my-safe-florida-home-condo-roof-upgrades",
+    description:
+      "Understand how state programs, inspections, and roof upgrades can reduce risk and improve insurance outcomes.",
+    date: "November 2025",
+    readTime: "6 min read",
+    url: "/blog/my-safe-florida-home-condo-roof-upgrades.html",
+  },
+];
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
@@ -88,6 +118,9 @@ const App: React.FC = () => {
             </a>
             <a href="#grants" className="hover:text-red-400">
               Condo Grants
+            </a>
+            <a href="#blog" className="hover:text-red-400">
+              Blog
             </a>
             <a href="#projects" className="hover:text-red-400">
               Projects
@@ -311,6 +344,51 @@ const App: React.FC = () => {
                 manager, and insurance team.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section
+        id="blog"
+        className="border-b border-slate-800 bg-slate-950"
+      >
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-slate-50 sm:text-3xl">
+              Roofing Resources & Insights
+            </h2>
+            <p className="mt-3 text-sm text-slate-300">
+              Expert guidance on HVHZ roofing, insurance, grants, and planning for homeowners, HOAs, and condo associations.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {blogPosts.map((post) => (
+              <article
+                key={post.slug}
+                className="group flex flex-col rounded-3xl border border-slate-800 bg-slate-900/60 p-5 shadow-sm transition hover:-translate-y-1 hover:border-red-500/80 hover:shadow-red-900/20"
+              >
+                <div className="mb-3 flex items-center gap-2 text-[11px] text-slate-400">
+                  <span>{post.date}</span>
+                  <span>•</span>
+                  <span>{post.readTime}</span>
+                </div>
+                <h3 className="text-base font-semibold text-slate-50 leading-snug">
+                  {post.title}
+                </h3>
+                <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-300">
+                  {post.description}
+                </p>
+                <a
+                  href={post.url}
+                  className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-red-400/90 hover:text-red-400"
+                >
+                  Read Article
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>
