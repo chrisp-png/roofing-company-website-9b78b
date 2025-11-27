@@ -30,42 +30,39 @@ function App() {
               Residential Roofing for South Florida Homeowners
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              Roof replacements and repairs for single-family homes, townhomes, and villas in Broward &amp; Palm Beach Counties.
+              Roof replacements and repairs designed for single-family homes, townhomes, and villas.
             </p>
           </div>
 
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              When you replace the roof on your home, you&apos;re not just buying shingles or tile — you&apos;re protecting your family,
-              your belongings, and one of your biggest investments. All Phase Construction USA helps homeowners choose the right
-              roofing system for their budget, neighborhood, and long-term plans.
+              Your home is your biggest investment. We help homeowners select the right roofing system based on
+              budget, curb appeal, HOA requirements, and long-term protection. Our team installs tile, metal,
+              shingle, and flat roofs built to withstand South Florida&apos;s HVHZ conditions.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              We work in communities throughout Deerfield Beach, Boca Raton, Delray Beach, Pompano Beach, Coral Springs, and the
-              surrounding areas. Our team is careful with driveways, landscaping, and outdoor spaces, and we place a strong emphasis
-              on cleanliness, communication, and daily jobsite cleanup.
+              We work cleanly and professionally — protecting driveways, landscaping, and outdoor areas while keeping
+              your property safe and organized throughout the project.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              If your HOA or community association requires approvals, we can help with scope descriptions, documentation, and
-              product details so your project moves forward smoothly. We also offer options in tile, metal, shingle, and flat roofing
-              so you can compare looks, performance, and budget.
+              If your neighborhood or HOA requires approvals, we can assist with documentation and product details so
+              your application moves quickly.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              Behind the scenes, we handle permitting, engineering when required, inspections, and wind-mitigation documentation
-              to help our customers maximize potential insurance savings and reduce stress during the process.
+              Behind the scenes, we handle permitting, engineering when required, inspections, and wind-mitigation
+              documentation to help homeowners reduce insurance costs and avoid paperwork headaches.
             </p>
           </div>
 
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Not sure where to start with your home&apos;s roof? Have one of our specialists walk you through materials, pricing,
-              and potential insurance and wind-mitigation benefits.
+              Not sure which roof is best for your home? Speak with one of our specialists today.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-red-500 transition-colors duration-200 whitespace-nowrap"
             >
-              Talk to a Residential Roofing Specialist
+              Talk to a Residential Specialist
             </a>
           </div>
         </div>
@@ -79,46 +76,41 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Commercial, Condo &amp; HOA Roofing
+              Commercial, Condo &amp; HOA Roofing Services
             </h2>
             <p className="text-lg text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-              Roofing solutions for commercial buildings, multifamily properties, and association communities in South Florida.
+              Roofing solutions for businesses, multifamily buildings, associations, and commercial properties.
             </p>
           </div>
 
           <div className="prose prose-invert max-w-4xl mx-auto">
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              All Phase Construction USA works with property managers, boards, investors, and owners to plan and execute
-              commercial and multifamily roofing projects with minimal disruption. We install flat and low-slope systems,
-              metal assemblies, and other commercial-grade roofing designed for South Florida&apos;s HVHZ requirements.
+              We work with property managers, building owners, and association boards to plan, manage, and complete
+              commercial roofing projects with minimal disruption to operations or residents.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              Our team helps you navigate specs, manufacturer requirements, and code details while coordinating phasing,
-              staging, safety, and communication for tenants and residents. We can work with your engineer or bring in
-              engineering support when needed to make sure the project is properly documented and ready for permitting.
+              Our team installs flat roofing systems, metal assemblies, and commercial-grade products that meet all
+              South Florida HVHZ building code requirements.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed mb-4">
-              We understand that board approvals, budgets, and timelines all matter. That&apos;s why we focus on clear scopes
-              of work, realistic schedules, and straightforward proposals that make it easier to explain the project to
-              decision-makers and owners.
+              We coordinate staging, phasing, communication, safety planning, and project documentation so your board
+              or ownership group has everything needed to make informed decisions.
             </p>
             <p className="text-lg text-neutral-300 leading-relaxed">
-              We manage permits, engineering, inspections, and wind-mitigation documentation so your commercial or association
-              project stays code-compliant and efficient from start to final inspection — including the paperwork your
-              insurance carrier may request.
+              We also handle permitting, engineering, inspections, wind mitigation documentation, and all required
+              paperwork for commercial or multifamily roofing projects.
             </p>
           </div>
 
           <div className="mt-8 rounded-2xl border border-red-500/40 bg-red-900/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <p className="text-neutral-200 text-sm sm:text-base">
-              Managing a commercial, condo, or HOA roof project? We can review plans, inspect existing conditions, and
-              provide a detailed proposal for your board or ownership group.
+              Need a proposal or inspection for a commercial or association property? Our commercial team can help.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-red-500 transition-colors duration-200 whitespace-nowrap"
             >
-              Request a Commercial / HOA Roof Consultation
+              Request Commercial/HOA Consultation
             </a>
           </div>
         </div>
