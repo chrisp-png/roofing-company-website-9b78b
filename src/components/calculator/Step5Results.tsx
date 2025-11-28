@@ -249,7 +249,7 @@ export default function Step5Results({
           </div>
           <h2 className="text-3xl font-bold text-white mb-4">Thank You!</h2>
           <p className="text-xl text-neutral-300 mb-2">
-            Your personalized roof estimate is shown below — but first, please review a few important factors that directly impact your final cost.
+            Your personalized roof estimate is shown below — but first, please review several important factors that directly impact your final cost and long-term savings.
           </p>
         </div>
 

@@ -124,6 +124,7 @@ export default function FinancingCalculatorPage() {
                   {formatCurrency(estimatedMonthly)}
                 </div>
                 <p className="text-neutral-400">per month (estimated)</p>
+                <p className="text-sm text-neutral-500 mt-2">Based on 60-month term</p>
               </div>
 
               <div className="bg-black/40 rounded-xl p-6 space-y-3">
@@ -143,6 +144,12 @@ export default function FinancingCalculatorPage() {
                   <span>Credit Tier Rate:</span>
                   <span>{creditTier.label} (~${creditTier.rate} per $10K)</span>
                 </div>
+              </div>
+
+              <div className="mt-6 bg-blue-900/20 border border-blue-500/30 rounded-xl p-4">
+                <p className="text-blue-300 text-sm text-center">
+                  <strong>Good news:</strong> You may qualify for longer terms (up to 20 years) which can significantly lower your monthly payment. Discuss term options with our financing coordinator during your inspection.
+                </p>
               </div>
             </div>
           </div>
