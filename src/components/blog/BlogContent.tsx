@@ -246,6 +246,295 @@ export default function BlogContent({ slug }: BlogContentProps) {
     );
   }
 
+  if (slug === 'wind-mitigation-guide-south-florida') {
+    return (
+      <div className="space-y-6">
+        <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
+          <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+            Most South Florida homeowners think about a new roof in terms of "How much will this cost me right now?"
+          </p>
+          <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+            A better question is:
+          </p>
+          <p className="text-xl text-neutral-300 leading-relaxed mb-4">
+            <strong className="text-white">"How much will I save every year in insurance and energy if I install the right roof system and document it properly?"</strong>
+          </p>
+          <p className="text-lg text-neutral-300 leading-relaxed">
+            That's what wind mitigation is all about.
+          </p>
+        </div>
+
+        <div className="prose prose-invert prose-lg max-w-none">
+          <p className="text-neutral-300 leading-relaxed">
+            In this guide, we'll break down how wind mitigation inspections work, what insurance companies look for, and how a properly built roof can save you <strong className="text-white">$500–$6,500 per year</strong> on insurance alone.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What Is a Wind Mitigation Inspection?</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            A wind mitigation inspection is a special report (often on <strong className="text-white">Form 1802</strong>) that documents how well your home is built to withstand high winds.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            The inspector looks at things like:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof covering type and rating</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof deck attachment (nail size, spacing, patterns)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof-to-wall connections (clips, straps, wraps)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Secondary Water Resistance (SWR) underlayment</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof shape (hip vs gable)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Opening protection (impact windows, doors, shutters)</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            Each feature has a "better" or "worse" category. The more hardened your house is, the more discounts you can qualify for with your insurance carrier.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">How a New Roof Impacts Your Wind Mit Credits</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            When you replace your roof in Broward or Palm Beach, it's not just about new shingles or tiles. A properly designed system affects multiple line items on your wind mitigation report:
+          </p>
+
+          <h3 className="text-2xl font-bold text-white mt-8 mb-4">1. Roof Covering</h3>
+          <p className="text-neutral-300 leading-relaxed mb-6">
+            Your new roof covering should be <strong className="text-white">FBC-approved</strong> and rated for High Velocity Hurricane Zones (HVHZ).
+          </p>
+
+          <h3 className="text-2xl font-bold text-white mt-8 mb-4">2. Roof Deck Attachment</h3>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            During re-roofing, we can upgrade:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Nail size</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Nail spacing</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Patterns and edge fasteners</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-6">
+            This upgrades the "roof deck attachment" part of your report.
+          </p>
+
+          <h3 className="text-2xl font-bold text-white mt-8 mb-4">3. Roof-to-Wall Connections</h3>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            If accessible and feasible, we can improve or correct:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Clips</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Straps</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Wraps</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Load-path continuity</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-6">
+            This is one of the biggest line items for insurance savings.
+          </p>
+
+          <h3 className="text-2xl font-bold text-white mt-8 mb-4">4. Secondary Water Resistance (SWR)</h3>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Using self-adhered underlayment (SWR) below your tile, shingle, or metal roof earns one of the strongest credits:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>It keeps water out even if the roof covering is damaged</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>It's heavily rewarded on most carrier credit sheets</span>
+            </li>
+          </ul>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">How Much Can You Really Save?</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Every home and carrier is different, but in the real world we often see:
+          </p>
+          <div className="bg-gradient-to-br from-green-900/20 to-green-700/10 border-2 border-green-500/30 rounded-2xl p-8 mb-6">
+            <ul className="space-y-3 text-neutral-300">
+              <li className="flex items-start">
+                <span className="text-green-500 mr-3 mt-1 text-xl">•</span>
+                <span><strong className="text-white">$500–$6,500/year</strong> in insurance savings after a new roof + updated wind mitigation</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-3 mt-1 text-xl">•</span>
+                <span>Over <strong className="text-white">10 years</strong>, that can be <strong className="text-white">$5,000–$65,000</strong></span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-500 mr-3 mt-1 text-xl">•</span>
+                <span>Over <strong className="text-white">20 years</strong>, that can be <strong className="text-white">$10,000–$130,000</strong></span>
+              </li>
+            </ul>
+          </div>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Even at a conservative example of <strong className="text-white">$2,500/year</strong>:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>$2,500 x 10 years = <strong className="text-white">$25,000</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>$2,500 x 20 years = <strong className="text-white">$50,000</strong></span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Add ventilation improvements that save around <strong className="text-white">$50/month</strong> on cooling:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span>$50/month = <strong className="text-white">$600/year</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span><strong className="text-white">$6,000 over 10 years</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span><strong className="text-white">$12,000 over 20 years</strong></span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            Suddenly, the "expensive roof" doesn't look so expensive when you factor in 10–20 years of savings.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Why Your Contractor Choice Matters</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Not every roofer understands wind mitigation, and many are not licensed to perform structural work.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            All Phase Construction USA is:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>A <strong className="text-white">Certified General Contractor (CGC1526236)</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>A <strong className="text-white">Certified Roofing Contractor (CCC1331464)</strong></span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            That matters because we can:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Upgrade roof deck attachment during your re-roof</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Correct roof-to-wall connections where feasible</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Install SWR underlayment</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Coordinate a new wind mitigation inspection after the project is complete</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Provide photo documentation to back up the report</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-6">
+            We don't just install a roof. We design a <strong className="text-white">roof + documentation + wind mitigation strategy</strong> around your insurance situation.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">When Should You Consider a Wind Mitigation-Focused Re-Roof?</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            You should seriously consider this approach if:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Your roof is nearing the end of its life</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Your insurance premiums have increased sharply</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Your carrier has requested updates or threatened non-renewal</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Your current wind mitigation report is old or missing</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>You live in Boca Raton, Deerfield Beach, Pompano Beach, Coral Springs, or any HVHZ area</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-6">
+            The sooner you upgrade, the sooner the savings begin.
+          </p>
+
+          <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-8 mt-12">
+            <h3 className="text-2xl font-bold text-white mb-6">Helpful Links</h3>
+            <div className="space-y-3">
+              <p className="text-neutral-300">
+                <Link to="/wind-mitigation" className="text-red-500 hover:text-red-400 font-semibold">
+                  Learn more about our Wind Mitigation services →
+                </Link>
+              </p>
+              <p className="text-neutral-300">
+                <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">
+                  Use the Roof Cost Calculator to see ballpark pricing →
+                </Link>
+              </p>
+              <p className="text-neutral-300">
+                <Link to="/contact" className="text-red-500 hover:text-red-400 font-semibold">
+                  Ready for a wind mitigation–focused roof replacement? →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (slug === 'concrete-tile-roofing-good-better-best') {
     return (
       <div className="space-y-6">

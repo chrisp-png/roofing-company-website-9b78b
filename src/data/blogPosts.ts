@@ -34,6 +34,17 @@ export const blogPosts: BlogPost[] = [
     featured: false,
   },
   {
+    slug: 'wind-mitigation-guide-south-florida',
+    title: 'The Complete Wind Mitigation Guide for South Florida Homeowners',
+    category: 'Wind Mitigation & Insurance',
+    publishedAt: '2025-01-14',
+    readTime: '10 min read',
+    excerpt: 'Learn how wind mitigation inspections work, what insurance companies look for, and how a properly built roof can save you $500–$6,500 per year on insurance.',
+    keywords: ['wind mitigation', 'insurance savings', 'form 1802', 'roof-to-wall connections', 'SWR underlayment'],
+    cityFocus: 'South Florida',
+    featured: true,
+  },
+  {
     slug: 'wind-mitigation-insurance-savings',
     title: 'Wind Mitigation Inspections: How to Save $500–$6,500 Per Year on Insurance',
     category: 'Wind Mitigation & Insurance',
