@@ -9,6 +9,7 @@ import MetalRoofingPage from './pages/MetalRoofingPage';
 import FlatRoofingPage from './pages/FlatRoofingPage';
 import WindMitigationPage from './pages/WindMitigationPage';
 import FinancingPage from './pages/FinancingPage';
+import FinancingCalculatorPage from './pages/FinancingCalculatorPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import RoofCalculatorPage from './pages/RoofCalculatorPage';
@@ -32,6 +33,7 @@ export default function AppRouter() {
           <Route path="roof-types/flat" element={<FlatRoofingPage />} />
           <Route path="wind-mitigation" element={<WindMitigationPage />} />
           <Route path="financing" element={<FinancingPage />} />
+          <Route path="financing-calculator" element={<FinancingCalculatorPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="roof-cost-calculator" element={<RoofCalculatorPage />} />

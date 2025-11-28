@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { MATERIAL_CONFIG } from '../../config/materialConfig';
-import { Check, Building2 } from 'lucide-react';
+import { Check, Building2, Download, Calculator } from 'lucide-react';
 import DualLicensedAdvantageSection from './DualLicensedAdvantageSection';
+import { generateEstimatePDF } from '../../utils/pdfGenerator';
 
 interface Step5Props {
   isCommercial: boolean;
@@ -248,7 +249,7 @@ export default function Step5Results({
           </div>
           <h2 className="text-3xl font-bold text-white mb-4">Thank You!</h2>
           <p className="text-xl text-neutral-300 mb-2">
-            Your estimate has been saved and our team will follow up shortly.
+            Your personalized roof estimate is shown below — but first, please review a few important factors that directly impact your final cost.
           </p>
         </div>
 
@@ -336,6 +337,56 @@ export default function Step5Results({
             <p className="text-xs text-neutral-400 italic leading-relaxed">
               <span className="font-semibold text-neutral-300">Important:</span> These savings examples are for illustration only. Actual insurance and energy savings vary by carrier, attic conditions, and home usage. We'll help you review your specific situation during your on-site inspection.
             </p>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-purple-900/20 to-purple-700/10 border-2 border-purple-500/30 rounded-2xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-white mb-6">
+            Your Estimated Net Cost Over Time
+          </h3>
+          <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-black/40 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-white mb-3">20-Year Outlook:</h4>
+                <div className="space-y-3 text-neutral-300">
+                  <div className="flex justify-between">
+                    <span>Roof System Cost:</span>
+                    <span className="font-semibold text-white">{formatCurrency(midEstimate)}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Less: Total Savings:</span>
+                    <span className="font-semibold text-green-400">-{formatCurrency(total20YearSavings)}</span>
+                  </div>
+                  <div className="border-t border-neutral-600 pt-3 flex justify-between">
+                    <span className="font-bold">Estimated Net Cost:</span>
+                    <span className="font-bold text-purple-400 text-lg">
+                      {midEstimate - total20YearSavings > 0 ? formatCurrency(midEstimate - total20YearSavings) : '$0'}
+                    </span>
+                  </div>
+                  {midEstimate - total20YearSavings <= 0 && (
+                    <p className="text-sm text-green-400 italic">Your roof effectively pays for itself!</p>
+                  )}
+                </div>
+              </div>
+
+              <div className="bg-black/40 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-white mb-3">Calculation Formula:</h4>
+                <div className="space-y-2 text-neutral-300 text-sm">
+                  <p className="font-mono bg-neutral-900 p-3 rounded">
+                    Total Roof Cost – Long-Term Savings = Estimated Net Cost
+                  </p>
+                  <p className="mt-4">
+                    This calculation shows your true long-term investment after factoring in insurance and energy savings over the life of your roof.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-neutral-900/50 rounded-xl p-4 border border-neutral-700">
+              <p className="text-xs text-neutral-400 italic">
+                <span className="font-semibold text-neutral-300">Note:</span> This net cost calculation uses the midpoint of your recommended estimate and example savings figures. Actual costs and savings will be confirmed during your on-site inspection.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -477,27 +528,72 @@ export default function Step5Results({
           </div>
         </div>
 
-        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-8 mb-8">
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">
-            Schedule Your Roof & Attic Inspection
-          </h3>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <a
-              href="tel:7542275605"
-              className="px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-colors text-center"
-            >
-              Call Now: 754-227-5605
-            </a>
-            <a
-              href="/contact"
-              className="px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors text-center"
-            >
-              Request Your Inspection
-            </a>
+        <div className="space-y-6 mb-8">
+          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              Download & Explore Your Options
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <button
+                onClick={() => {
+                  generateEstimatePDF({
+                    name,
+                    material,
+                    tier,
+                    roofSize,
+                    complexity,
+                    lowEstimate,
+                    highEstimate,
+                    bestLowEstimate,
+                    bestHighEstimate,
+                    insurance10Year,
+                    insurance20Year,
+                    ventilation10Year,
+                    ventilation20Year,
+                    total20YearSavings,
+                  });
+                }}
+                className="flex items-center justify-center gap-3 px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-colors"
+              >
+                <Download className="w-5 h-5" />
+                Download My Detailed Estimate (PDF)
+              </button>
+
+              <a
+                href={`/financing-calculator?estimate=${Math.round((lowEstimate + highEstimate) / 2)}`}
+                className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors text-center"
+              >
+                <Calculator className="w-5 h-5" />
+                See Estimated Monthly Payments
+              </a>
+            </div>
+            <p className="text-center text-sm text-neutral-400">
+              Download a detailed PDF or explore financing options
+            </p>
           </div>
-          <p className="text-center text-sm text-neutral-400">
-            Our team will confirm your estimate and schedule a free on-site assessment
-          </p>
+
+          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              Schedule Your Roof & Attic Inspection
+            </h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <a
+                href="tel:7542275605"
+                className="px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-colors text-center"
+              >
+                Call Now: 754-227-5605
+              </a>
+              <a
+                href="/contact"
+                className="px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors text-center"
+              >
+                Request Your Inspection
+              </a>
+            </div>
+            <p className="text-center text-sm text-neutral-400">
+              Our team will confirm your estimate and schedule a free on-site assessment
+            </p>
+          </div>
         </div>
       </div>
     );
