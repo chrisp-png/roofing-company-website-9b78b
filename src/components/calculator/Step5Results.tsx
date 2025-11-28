@@ -254,19 +254,17 @@ export default function Step5Results({
         <DualLicensedAdvantageSection />
 
         <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-8 mb-8">
-          <h3 className="text-2xl font-bold text-red-500 mb-4">
-            Your Estimated Range: {formatCurrency(lowEstimate)} – {formatCurrency(highEstimate)}
+          <h3 className="text-2xl font-bold text-white mb-2">
+            Recommended System ({tierConfig.label})
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-neutral-300">
+          <h4 className="text-3xl font-bold text-red-500 mb-4">
+            Estimated Range: {formatCurrency(lowEstimate)} – {formatCurrency(highEstimate)}
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-300">
             <div>
-              <span className="font-semibold">Material:</span>
+              <span className="font-semibold">Roof Type:</span>
               <br />
               {materialConfig.label}
-            </div>
-            <div>
-              <span className="font-semibold">Tier:</span>
-              <br />
-              {tierConfig.label}
             </div>
             <div>
               <span className="font-semibold">Roof Size:</span>
@@ -328,6 +326,86 @@ export default function Step5Results({
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        <div className="mb-8 bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            All Quality Levels for {materialConfig.label}
+          </h3>
+          <p className="text-neutral-300 mb-6">
+            Compare pricing for all quality levels available for your home:
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="border-b border-neutral-700">
+                  <th className="py-3 px-4 text-white font-semibold">Tier</th>
+                  <th className="py-3 px-4 text-white font-semibold">Description</th>
+                  <th className="py-3 px-4 text-white font-semibold text-right">Typical Range for Your Home</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.keys(materialConfig.tiers).map((tierKey) => {
+                  const tierData = materialConfig.tiers[tierKey];
+                  const tierLow = Math.round(tierData.priceMin * roofSize * complexity);
+                  const tierHigh = Math.round(tierData.priceMax * roofSize * complexity);
+                  const isRecommended = tierKey === tier;
+
+                  return (
+                    <tr
+                      key={tierKey}
+                      className={`border-b border-neutral-800 ${isRecommended ? 'bg-red-900/10' : ''}`}
+                    >
+                      <td className="py-4 px-4">
+                        <div className="flex items-center gap-2">
+                          <span className={`font-semibold ${isRecommended ? 'text-red-500' : 'text-white'}`}>
+                            {tierData.label.split(' - ')[0]}
+                          </span>
+                          {isRecommended && (
+                            <span className="px-2 py-1 bg-red-600 text-white text-xs font-bold rounded">
+                              RECOMMENDED
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="py-4 px-4 text-neutral-300 text-sm">
+                        {tierData.description}
+                      </td>
+                      <td className="py-4 px-4 text-right">
+                        <span className={`font-semibold ${isRecommended ? 'text-red-500' : 'text-white'}`}>
+                          {formatCurrency(tierLow)} – {formatCurrency(tierHigh)}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 p-4 bg-neutral-800 border border-neutral-700 rounded-lg">
+            <p className="text-sm text-neutral-400 leading-relaxed">
+              <strong className="text-white">Note:</strong> These ranges are estimates based on your roof size and complexity. Final pricing will be confirmed during your on-site assessment, where we'll discuss the specific features and benefits of each tier in detail.
+            </p>
+          </div>
+        </div>
+
+        <div className="mb-8 bg-gradient-to-br from-blue-900/20 to-blue-700/10 border-2 border-blue-500/30 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Thinking About Upgrading to a Higher Tier?
+          </h3>
+          <div className="space-y-4 text-neutral-300 leading-relaxed">
+            <p>
+              With our financing options, the difference between a basic system and a higher-tier roof can often be spread out over affordable monthly payments.
+            </p>
+            <p>
+              When we visit your home, we'll walk you through the pros, cons, and payment options for each tier so you can choose what feels right for your budget and your long-term plans.
+            </p>
+            <p className="text-white font-semibold">
+              Many homeowners find that upgrading to a Best or Premium system is surprisingly affordable when financed, especially when combined with insurance savings.
+            </p>
           </div>
         </div>
 
@@ -417,23 +495,6 @@ export default function Step5Results({
           <div className="bg-neutral-900/50 rounded-xl p-4 border border-neutral-700">
             <p className="text-xs text-neutral-400 italic leading-relaxed">
               <span className="font-semibold text-neutral-300">Important:</span> These savings examples are for illustration only. Actual insurance and energy savings vary by carrier, attic conditions, and home usage. We'll help you review your specific situation during your on-site inspection.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-br from-blue-900/20 to-blue-700/10 border-2 border-blue-500/30 rounded-2xl p-8 mb-8">
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Thinking About Upgrading from Shingle to Metal or Tile?
-          </h3>
-          <div className="space-y-4 text-neutral-300 leading-relaxed">
-            <p>
-              With our financing options, the difference between a basic shingle system and a higher-end metal or tile system can often be spread out over affordable monthly payments.
-            </p>
-            <p>
-              Ask us how we can structure your roof project so you get the system you really want, not just the one you feel stuck with.
-            </p>
-            <p className="text-white font-semibold">
-              Many homeowners find that the combination of financing and insurance savings makes a premium roof system surprisingly affordable.
             </p>
           </div>
         </div>

@@ -90,9 +90,7 @@ export default function RoofCostCalculator() {
           {state.step === 4 && (
             <Step4TierComplexity
               material={state.material}
-              selectedTier={state.tier}
               selectedComplexity={state.complexity}
-              onSelectTier={(tier) => updateState({ tier })}
               onSelectMaterial={(material) => updateState({ material })}
               onSelectComplexity={(complexity) => updateState({ complexity })}
               onNext={nextStep}

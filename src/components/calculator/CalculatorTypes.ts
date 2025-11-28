@@ -12,12 +12,14 @@ export interface CalculatorState {
   city: string;
 }
 
+export const DEFAULT_TIER = 'better';
+
 export const initialCalculatorState: CalculatorState = {
   step: 1,
   propertyType: '',
   roofSize: 0,
   material: '',
-  tier: '',
+  tier: DEFAULT_TIER,
   complexity: 1.0,
   name: '',
   phone: '',
