@@ -44,7 +44,8 @@ export default function Navigation() {
     { name: 'Commercial', href: '/commercial-roofing' },
     { name: 'Wind Mitigation', href: '/wind-mitigation' },
     { name: 'Financing', href: '/financing' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Roof Cost Calculator', href: '/roof-cost-calculator' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
 

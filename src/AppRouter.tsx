@@ -13,6 +13,8 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import RoofCalculatorPage from './pages/RoofCalculatorPage';
 import BocaRatonPage from './pages/BocaRatonPage';
+import BlogPage from './pages/BlogPage';
+import BlogDetailPage from './pages/BlogDetailPage';
 
 export default function AppRouter() {
   return (
@@ -32,6 +34,8 @@ export default function AppRouter() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="roof-cost-calculator" element={<RoofCalculatorPage />} />
           <Route path="service-areas/boca-raton" element={<BocaRatonPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog/:slug" element={<BlogDetailPage />} />
         </Route>
       </Routes>
     </Router>
