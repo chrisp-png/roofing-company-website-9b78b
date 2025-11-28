@@ -99,54 +99,12 @@ export default function BlogDetailPage() {
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none">
-            {/* TODO: Replace this placeholder content with the full blog article text */}
-            {/* from my 10_Fresh_SEO_Blogs_CORRECTED.html document for slug: {post.slug} */}
-
             <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-8 mb-8">
               <p className="text-neutral-300 leading-relaxed mb-4">
-                <strong className="text-white">Content Placeholder:</strong> This is where the full blog
-                article content will be inserted for "{post.title}".
-              </p>
-              <p className="text-neutral-400 leading-relaxed mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p className="text-neutral-400 leading-relaxed mb-4">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                <strong className="text-white">Content Placeholder:</strong> Full blog content for "{post.slug}" will be inserted here.
               </p>
               <p className="text-neutral-400 leading-relaxed">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo.
-              </p>
-            </div>
-
-            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-white mb-4">Key Takeaways</h3>
-              <ul className="space-y-2 text-neutral-300">
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-3 mt-1">•</span>
-                  <span>Placeholder bullet point about the topic covered in this article</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-3 mt-1">•</span>
-                  <span>Another important takeaway that readers should remember</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-3 mt-1">•</span>
-                  <span>Final key point that summarizes the article's main message</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-6">
-              <p className="text-sm text-neutral-400 italic">
-                <strong className="text-white">Developer Note:</strong> Replace the placeholder content
-                above with the full article HTML from the 10_Fresh_SEO_Blogs_CORRECTED.html document.
-                Match the slug "{post.slug}" to find the corresponding article content.
+                This placeholder will be replaced with the actual blog article content in small batches after the blog structure is complete.
               </p>
             </div>
           </div>
@@ -154,7 +112,7 @@ export default function BlogDetailPage() {
           <div className="mt-16 pt-8 border-t border-neutral-800">
             <h3 className="text-xl font-bold text-white mb-2">Related Keywords</h3>
             <div className="flex flex-wrap gap-2">
-              {post.targetKeywords.map((keyword, index) => (
+              {post.keywords.map((keyword, index) => (
                 <span
                   key={index}
                   className="px-3 py-1 bg-neutral-900 border border-neutral-700 rounded-full text-sm text-neutral-300"
@@ -182,13 +140,13 @@ export default function BlogDetailPage() {
                   to="/roof-cost-calculator"
                   className="px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-all duration-200 shadow-lg shadow-red-900/50 text-center"
                 >
-                  Try the Roof Cost Calculator
+                  Roof Cost Calculator
                 </Link>
                 <Link
                   to="/contact"
                   className="px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-all duration-200 text-center"
                 >
-                  Schedule Free Assessment
+                  Schedule an Inspection
                 </Link>
               </div>
 

@@ -31,11 +31,10 @@ export default function BlogPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Roofing Education & Insurance Savings for South Florida Homeowners
+                Roofing Education for South Florida Homeowners
               </h1>
               <p className="text-xl text-neutral-300 leading-relaxed">
-                Expert insights on tile roofs, foam and underlayment, wind mitigation, hurricane-proofing,
-                timing your roof replacement, understanding change orders, and maximizing insurance savings.
+                Expert guides on tile roofs, metal roofs, wind mitigation, insurance savings, hurricane protection, and more.
               </p>
             </div>
           </div>
