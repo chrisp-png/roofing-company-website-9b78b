@@ -421,6 +421,23 @@ export default function Step5Results({
           </div>
         </div>
 
+        <div className="bg-gradient-to-br from-blue-900/20 to-blue-700/10 border-2 border-blue-500/30 rounded-2xl p-8 mb-8">
+          <h3 className="text-2xl font-bold text-white mb-6">
+            Thinking About Upgrading from Shingle to Metal or Tile?
+          </h3>
+          <div className="space-y-4 text-neutral-300 leading-relaxed">
+            <p>
+              With our financing options, the difference between a basic shingle system and a higher-end metal or tile system can often be spread out over affordable monthly payments.
+            </p>
+            <p>
+              Ask us how we can structure your roof project so you get the system you really want, not just the one you feel stuck with.
+            </p>
+            <p className="text-white font-semibold">
+              Many homeowners find that the combination of financing and insurance savings makes a premium roof system surprisingly affordable.
+            </p>
+          </div>
+        </div>
+
         <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-8 mb-8">
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Ready to Get Started?</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
