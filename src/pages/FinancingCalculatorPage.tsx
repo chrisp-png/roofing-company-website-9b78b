@@ -30,13 +30,7 @@ export default function FinancingCalculatorPage() {
 
   const passedState = location.state as any;
 
-  useEffect(() => {
-    if (!betterLowParam || !betterHighParam) {
-      navigate('/roof-cost-calculator', {
-        state: { message: 'Please complete the roof estimate steps first.' }
-      });
-    }
-  }, [betterLowParam, betterHighParam, navigate]);
+  const hasRequiredData = betterLowParam && betterHighParam;
 
   const betterLow = parseInt(betterLowParam || '0');
   const betterHigh = parseInt(betterHighParam || '0');
@@ -109,10 +103,6 @@ export default function FinancingCalculatorPage() {
     }
   };
 
-  if (!betterLowParam || !betterHighParam) {
-    return null;
-  }
-
   return (
     <Layout>
       <SEO
@@ -127,12 +117,32 @@ export default function FinancingCalculatorPage() {
               Explore Your Monthly Payment Options
             </h1>
             <p className="text-xl text-neutral-300 mb-2">
-              These payment estimates are based on your roof size, system type, and chosen upgrade level.
+              These monthly payment estimates are based on your roof size and the system options you selected.
             </p>
             <p className="text-lg text-neutral-400">
-              Final terms depend on credit approval and lender programs.
+              Final terms depend on lender approval, credit profile, and loan program.
             </p>
           </div>
+
+          {!hasRequiredData ? (
+            <div className="bg-neutral-900 border-2 border-yellow-600/50 rounded-2xl p-12 text-center">
+              <div className="max-w-2xl mx-auto">
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  Complete Your Roof Estimate First
+                </h2>
+                <p className="text-xl text-neutral-300 mb-8">
+                  To see accurate monthly payment estimates, please first complete the Roof Cost Estimator.
+                </p>
+                <Link
+                  to="/roof-cost-calculator"
+                  className="inline-block px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-colors"
+                >
+                  Go to Roof Cost Estimator
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <>
 
           <div className="bg-neutral-950 border border-neutral-800 rounded-2xl p-8 mb-8">
             <div className="mb-8">
@@ -354,6 +364,8 @@ export default function FinancingCalculatorPage() {
               ← Back to Roof Cost Calculator
             </Link>
           </div>
+          </>
+          )}
         </div>
       </div>
     </Layout>
