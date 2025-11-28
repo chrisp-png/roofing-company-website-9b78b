@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import SEO from '../components/SEO';
+import BlogContent from '../components/blog/BlogContent';
 import { blogPosts } from '../data/blogPosts';
 import { Calendar, Clock, Tag, Phone, Mail, MapPin, ArrowLeft } from 'lucide-react';
 
@@ -98,16 +99,7 @@ export default function BlogDetailPage() {
             </div>
           </div>
 
-          <div className="prose prose-invert prose-lg max-w-none">
-            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-8 mb-8">
-              <p className="text-neutral-300 leading-relaxed mb-4">
-                <strong className="text-white">Content Placeholder:</strong> Full blog content for "{post.slug}" will be inserted here.
-              </p>
-              <p className="text-neutral-400 leading-relaxed">
-                This placeholder will be replaced with the actual blog article content in small batches after the blog structure is complete.
-              </p>
-            </div>
-          </div>
+          <BlogContent slug={post.slug} />
 
           <div className="mt-16 pt-8 border-t border-neutral-800">
             <h3 className="text-xl font-bold text-white mb-2">Related Keywords</h3>
