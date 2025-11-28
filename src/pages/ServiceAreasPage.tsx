@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import Layout from '../components/Layout';
 import { MapPin, Phone, Calculator } from 'lucide-react';
 
 const cities = [
@@ -28,7 +27,7 @@ const cities = [
 
 export default function ServiceAreasPage() {
   return (
-    <Layout>
+    <>
       <SEO
         title="South Florida Roofing Service Areas | Broward & Palm Beach Counties"
         description="All Phase Construction USA serves 20+ cities across Broward and Palm Beach Counties. Expert roofing contractor for residential and commercial properties."
@@ -104,6 +103,6 @@ export default function ServiceAreasPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
