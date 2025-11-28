@@ -535,6 +535,358 @@ export default function BlogContent({ slug }: BlogContentProps) {
     );
   }
 
+  if (slug === 'hurricane-proof-your-roof-guide') {
+    return (
+      <div className="space-y-6">
+        <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
+          <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+            In South Florida, "hurricane season" isn't a date on a calendar—it's a stress test for your roof.
+          </p>
+          <p className="text-lg text-neutral-300 leading-relaxed mb-4">
+            Every year, homeowners ask the same question:
+          </p>
+          <p className="text-xl text-neutral-300 leading-relaxed mb-4">
+            <strong className="text-white">"Is my roof really ready for a Category 3, 4, or 5 storm?"</strong>
+          </p>
+          <p className="text-lg text-neutral-300 leading-relaxed">
+            This guide walks you through the real-world factors that determine whether your roof is hurricane-ready, and what upgrades provide the best protection (and the best return on investment).
+          </p>
+        </div>
+
+        <div className="prose prose-invert prose-lg max-w-none">
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Start With the Structure, Not Just the Shingles</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Most people think hurricane-proofing starts with the roof covering—shingles, tiles, or metal.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            In reality, a hurricane-ready roof is about the <strong className="text-white">load path</strong>:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>How the wind forces travel from the roof</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Through the walls</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Down into the foundation</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Key pieces of that load path include:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof deck attachment</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Roof-to-wall connections</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Straps, clips, and wraps</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Gable end bracing</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Soffit and fascia stability</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            If those pieces are weak or outdated, it doesn't matter how pretty your roof covering is.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 1: Choose the Right Roof System</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Each roof type has pros and cons in hurricane conditions:
+          </p>
+
+          <div className="bg-black border border-neutral-700 rounded-xl p-6 my-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Tile Roofs</h3>
+            <ul className="space-y-2 text-neutral-300">
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Heavy, can perform very well when properly attached</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Vulnerable to broken or flying tiles if foam is skimped</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Underlayment and foam quality are critical</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-black border border-neutral-700 rounded-xl p-6 my-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Metal Roofs</h3>
+            <ul className="space-y-2 text-neutral-300">
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Excellent wind resistance</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Mechanically seamed systems perform especially well in HVHZ</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Great platform for future solar attachments</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-black border border-neutral-700 rounded-xl p-6 my-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Shingle Roofs</h3>
+            <ul className="space-y-2 text-neutral-300">
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Budget-friendly</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>High-performance shingles with proper installation can still meet strong wind ratings</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Underlayment and nailing patterns matter a lot</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-black border border-neutral-700 rounded-xl p-6 my-6">
+            <h3 className="text-2xl font-bold text-white mb-4">Flat Roofs (TPO / Modified / IB PVC)</h3>
+            <ul className="space-y-2 text-neutral-300">
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Performance depends heavily on slope, drainage, and detailing</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 mr-3 mt-1">•</span>
+                <span>Membrane choice and edge conditions are critical</span>
+              </li>
+            </ul>
+          </div>
+
+          <p className="text-neutral-300 leading-relaxed">
+            There's no one "perfect" material for everyone. The right choice depends on your home, your budget, and how long you plan to stay.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 2: Upgrade Roof Deck Attachment</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            During a re-roof, we can upgrade:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Nail size (e.g., 8d ring-shank instead of small smooth nails)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Nail spacing (closer spacing equals better uplift resistance)</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Edge fastening patterns</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            These changes can:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Drastically improve uplift resistance</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Improve your wind mitigation report</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Increase your insurance discounts</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            It's a small detail with a big impact.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 3: Improve Roof-to-Wall Connections</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            If accessible and feasible, roof-to-wall connections can sometimes be improved or corrected during a re-roof.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            This includes:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Adding or correcting straps</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Ensuring clips are properly installed</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Improving continuity in the load path</span>
+            </li>
+          </ul>
+          <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-6 my-6">
+            <p className="text-neutral-300 leading-relaxed">
+              This is where having a <strong className="text-white">dual-licensed GC + Roofing Contractor</strong> like All Phase Construction USA makes a big difference. We're licensed to handle both the <strong className="text-white">roof</strong> and the <strong className="text-white">structural connections</strong> that support it.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 4: Use SWR Underlayment</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Secondary Water Resistance (SWR) is one of the most powerful hurricane upgrades you can add.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Benefits:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Keeps your home protected even if shingles, tiles, or metal panels are damaged</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Provides extra time before water intrusion</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Often yields major insurance discounts</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            In a real storm, SWR is your last line of defense between your family and the elements.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 5: Fix Soffit, Fascia & Edge Conditions</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Hurricanes don't just attack the middle of the roof. They hammer the edges.
+          </p>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            Common failure points:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span>Weak soffits that blow out and let wind into the attic</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span>Poorly attached fascia</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span>Inadequate drip-edge or edge metal</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-yellow-500 mr-3 mt-1">•</span>
+              <span>Loose gutters that become wind catchers</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            Part of hurricane-proofing your roof is making sure the edges and transitions are built like they matter—because they do.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 6: Combine Protection With Savings</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            The same upgrades that help your roof withstand a storm are the ones that often maximize your insurance savings:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Improved roof deck attachment</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Better roof-to-wall connections</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>SWR underlayment</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Stronger roof covering</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-green-500 mr-3 mt-1">•</span>
+              <span>Proper documentation and a new wind mitigation inspection</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            Between <strong className="text-white">insurance savings</strong> and <strong className="text-white">ventilation upgrades</strong>, many homeowners see thousands per year in combined benefit over the life of the roof.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">How All Phase Construction USA Can Help</h2>
+          <p className="text-neutral-300 leading-relaxed mb-4">
+            When we design a "hurricane-ready" roof system, we focus on:
+          </p>
+          <ul className="space-y-2 text-neutral-300 mb-6">
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Matching the roof type (tile, metal, shingle, flat) to your specific home and neighborhood</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Upgrading the structural and attachment details that most roofers gloss over</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Using materials that perform well in HVHZ conditions</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Coordinating a wind mitigation inspection after the job</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-red-500 mr-3 mt-1">•</span>
+              <span>Providing photos and documentation you can share with your insurer</span>
+            </li>
+          </ul>
+          <p className="text-neutral-300 leading-relaxed">
+            We don't just sell roofs—we build <strong className="text-white">storm systems</strong> for South Florida homes.
+          </p>
+
+          <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-8 mt-12">
+            <h3 className="text-2xl font-bold text-white mb-6">Helpful Links</h3>
+            <div className="space-y-3">
+              <p className="text-neutral-300">
+                <Link to="/wind-mitigation" className="text-red-500 hover:text-red-400 font-semibold">
+                  Explore our Wind Mitigation & Insurance Savings page →
+                </Link>
+              </p>
+              <p className="text-neutral-300">
+                <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">
+                  See ballpark pricing with the Roof Cost Calculator →
+                </Link>
+              </p>
+              <p className="text-neutral-300">
+                <Link to="/contact" className="text-red-500 hover:text-red-400 font-semibold">
+                  Talk to us about a hurricane-focused roof upgrade →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (slug === 'concrete-tile-roofing-good-better-best') {
     return (
       <div className="space-y-6">

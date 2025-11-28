@@ -61,8 +61,9 @@ export const blogPosts: BlogPost[] = [
     category: 'Hurricane Protection',
     publishedAt: '2025-01-16',
     readTime: '9 min read',
-    excerpt: 'From SWR to metal roofs to uplift calculations, this guide teaches homeowners how to prepare roofs for Category 4–5 storms.',
-    keywords: ['hurricane roofing', 'HVHZ', 'roof protection'],
+    excerpt: 'Learn the real-world factors that determine whether your roof is hurricane-ready, from load paths to structural connections to SWR underlayment.',
+    keywords: ['hurricane roofing', 'HVHZ', 'roof protection', 'load path', 'structural connections'],
+    cityFocus: 'South Florida',
     featured: false,
   },
   {
