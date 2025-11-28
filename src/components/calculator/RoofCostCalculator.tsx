@@ -13,10 +13,27 @@ export default function RoofCostCalculator() {
     setState((prev) => ({ ...prev, ...updates }));
   };
 
-  const nextStep = () => updateState({ step: state.step + 1 });
-  const prevStep = () => updateState({ step: state.step - 1 });
+  const isCommercial = state.propertyType === 'commercial';
 
-  const progressPercentage = (state.step / 5) * 100;
+  const nextStep = () => {
+    if (state.step === 1 && isCommercial) {
+      updateState({ step: 5 });
+    } else {
+      updateState({ step: state.step + 1 });
+    }
+  };
+
+  const prevStep = () => {
+    if (state.step === 5 && isCommercial) {
+      updateState({ step: 1 });
+    } else {
+      updateState({ step: state.step - 1 });
+    }
+  };
+
+  const totalSteps = isCommercial ? 2 : 5;
+  const displayStep = isCommercial && state.step === 5 ? 2 : state.step;
+  const progressPercentage = (displayStep / totalSteps) * 100;
 
   return (
     <div className="min-h-screen bg-black py-12 px-4">
@@ -32,7 +49,7 @@ export default function RoofCostCalculator() {
 
         <div className="mb-8">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-sm text-neutral-400">Step {state.step} of 5</span>
+            <span className="text-sm text-neutral-400">Step {displayStep} of {totalSteps}</span>
             <span className="text-sm text-neutral-400">{Math.round(progressPercentage)}% Complete</span>
           </div>
           <div className="w-full h-2 bg-neutral-900 rounded-full overflow-hidden">
@@ -84,6 +101,7 @@ export default function RoofCostCalculator() {
 
           {state.step === 5 && (
             <Step5Results
+              isCommercial={isCommercial}
               roofSize={state.roofSize}
               material={state.material}
               tier={state.tier}
