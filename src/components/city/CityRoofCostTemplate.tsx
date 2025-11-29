@@ -121,7 +121,7 @@ export default function CityRoofCostTemplate({
               <p className="text-xl text-neutral-300 leading-relaxed mb-6">
                 Roof replacement costs in {cityName} depend on home size, material selection, {hoaCommon && 'HOA requirements, '}
                 and Florida Building Code compliance. With {coastalDescription}, proper roof installation is critical.
-                Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">Roof Cost Calculator</Link> for
+                Use our <Link to="/roof-cost-calculator#calculator-start" className="text-red-500 hover:text-red-400 font-semibold">Roof Cost Calculator</Link> for
                 instant estimates, or schedule a free assessment for exact pricing.
               </p>
 
@@ -134,7 +134,7 @@ export default function CityRoofCostTemplate({
               </a>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/roof-cost-calculator"
+                  to="/roof-cost-calculator#calculator-start"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-all duration-200 shadow-lg shadow-red-900/50"
                 >
                   <Calculator className="w-5 h-5" />
@@ -525,7 +525,7 @@ export default function CityRoofCostTemplate({
                 Schedule My {cityName} Roof Estimate
               </Link>
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator#calculator-start"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-200"
               >
                 <Calculator className="w-5 h-5" />

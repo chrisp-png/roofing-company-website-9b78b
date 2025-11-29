@@ -533,7 +533,7 @@ export default function CommercialRoofingPage() {
                 Request a Commercial Roof Assessment
               </Link>
               <Link
-                to="/roof-cost-calculator"
+                to="/roof-cost-calculator#calculator-start"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-200"
               >
                 Calculate Roof Cost

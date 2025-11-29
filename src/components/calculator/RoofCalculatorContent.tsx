@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Calculator, Phone, ChevronDown, ChevronUp, DollarSign, Shield, CheckCircle, MapPin } from 'lucide-react';
 import RoofCostCalculator from './RoofCostCalculator';
@@ -52,6 +52,17 @@ const faqData: FAQItem[] = [
 
 export default function RoofCalculatorContent() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (window.location.hash === '#calculator-start') {
+      const element = document.getElementById('calculator-start');
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, []);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -344,7 +355,9 @@ export default function RoofCalculatorContent() {
         </div>
 
         {/* Calculator Component */}
-        <RoofCostCalculator />
+        <div id="calculator-start">
+          <RoofCostCalculator />
+        </div>
       </section>
 
       {/* CTA Section */}
