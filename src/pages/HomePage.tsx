@@ -3,6 +3,7 @@ import HeroSection from '../components/home/HeroSection';
 import TrustBar from '../components/home/TrustBar';
 import UrgencyBanner from '../components/home/UrgencyBanner';
 import ServicesGrid from '../components/home/ServicesGrid';
+import AuthorityGroup from '../components/authority/AuthorityGroup';
 import ProjectsGallery from '../components/home/ProjectsGallery';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 import BottomCTA from '../components/home/BottomCTA';
@@ -46,6 +47,7 @@ export default function HomePage() {
       <TrustBar />
       <UrgencyBanner />
       <ServicesGrid />
+      <AuthorityGroup />
       <ProjectsGallery />
       <TestimonialsSection />
       <BottomCTA />

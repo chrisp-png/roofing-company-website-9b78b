@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import SEO from '../components/SEO';
 import Schema from '../components/Schema';
+import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Home, Hammer, FileCheck, DollarSign, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function WindMitigationPage() {
@@ -351,6 +352,8 @@ export default function WindMitigationPage() {
             </div>
           </div>
         </section>
+
+        <AuthorityGroup />
       </div>
     </>
   );

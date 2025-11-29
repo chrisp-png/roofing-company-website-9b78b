@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { MapPin, Calculator, Shield, CheckCircle } from 'lucide-react';
 
 const browardCountyCities = [
@@ -147,6 +148,8 @@ export default function ServiceAreasPage() {
               </div>
             </div>
           </div>
+
+          <AuthorityGroup />
         </div>
       </div>
     </>
