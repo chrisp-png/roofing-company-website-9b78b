@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function FooterNew() {
   return (
     <footer className="bg-neutral-950 text-white border-t border-neutral-800 pt-12 pb-8">
@@ -10,6 +12,12 @@ export default function FooterNew() {
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
               Professional roofing and general contracting solutions for Broward and Palm Beach Counties.
             </p>
+            <Link
+              to="/contact"
+              className="inline-block px-6 py-3 bg-red-600 text-white text-sm font-bold rounded-lg hover:bg-red-500 transition-colors"
+            >
+              Schedule Roof Estimate
+            </Link>
           </div>
 
           <div>
@@ -18,8 +26,8 @@ export default function FooterNew() {
               <p>590 Goolsby Blvd</p>
               <p>Deerfield Beach, FL 33442</p>
               <p className="pt-2">
-                <a href="tel:754-227-5605" className="hover:text-red-500 transition-colors">
-                  Phone: 754-227-5605
+                <a href="tel:754-227-5605" className="text-red-500 hover:text-red-400 transition-colors font-bold text-base">
+                  📞 Call: (754) 227-5605
                 </a>
               </p>
               <p>
@@ -33,8 +41,10 @@ export default function FooterNew() {
           <div>
             <h4 className="font-semibold mb-4 text-white">Licenses & Service Area</h4>
             <div className="space-y-2 text-sm text-neutral-400">
-              <p>FL General Contractor: CGC1526236</p>
-              <p>FL Roofing Contractor: CCC1331464</p>
+              <p className="font-bold text-white">FL General Contractor</p>
+              <p className="text-red-500 font-semibold">CGC1526236</p>
+              <p className="font-bold text-white mt-3">FL Roofing Contractor</p>
+              <p className="text-red-500 font-semibold">CCC1331464</p>
               <p className="pt-2">
                 Serving Broward & Palm Beach Counties
               </p>

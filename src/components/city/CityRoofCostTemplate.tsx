@@ -104,12 +104,34 @@ export default function CityRoofCostTemplate({
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 How Much Does a Roof Cost in {cityName}, FL?
               </h1>
-              <p className="text-xl text-neutral-300 leading-relaxed mb-8">
+
+              <div className="mb-6">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-bold text-lg transition-colors"
+                >
+                  Get a Free Roof Estimate for Your {cityName} Home →
+                </Link>
+              </div>
+
+              <p className="text-sm text-neutral-400 mb-6 font-medium">
+                Trusted by homeowners in {cityName}, FL
+              </p>
+
+              <p className="text-xl text-neutral-300 leading-relaxed mb-6">
                 Roof replacement costs in {cityName} depend on home size, material selection, {hoaCommon && 'HOA requirements, '}
                 and Florida Building Code compliance. With {coastalDescription}, proper roof installation is critical.
                 Use our <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">Roof Cost Calculator</Link> for
                 instant estimates, or schedule a free assessment for exact pricing.
               </p>
+
+              <a
+                href="tel:754-227-5605"
+                className="inline-flex items-center gap-2 text-white hover:text-red-500 font-semibold text-lg mb-8 transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                (754) 227-5605
+              </a>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/roof-cost-calculator"

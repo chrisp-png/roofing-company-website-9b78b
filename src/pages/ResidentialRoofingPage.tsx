@@ -159,6 +159,71 @@ export default function ResidentialRoofingPage() {
           </div>
         </section>
 
+        {/* What Homeowners Love */}
+        <section className="py-16 bg-black border-b border-neutral-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                What Homeowners Love About Working With Us
+              </h2>
+              <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
+                We take care of every detail so you can enjoy a stress-free roofing experience
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Property Protection</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    We protect landscaping and property during installation with tarps, plywood walkways, and careful material placement.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Daily Cleanup & Magnet Sweep</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    Our crews perform thorough cleanup at the end of each day, including magnetic sweeps to remove all nails and metal debris.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Clear Communication</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    You'll have direct access to your project manager throughout the entire installation with daily updates on progress.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">We Handle Everything</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    Permits, HOA approvals, inspections, and wind mitigation documentation—all managed by our team from start to finish.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-all duration-200 shadow-lg shadow-red-900/50"
+              >
+                Get a Free Residential Roof Estimate
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Roofing Options */}
         <section className="py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

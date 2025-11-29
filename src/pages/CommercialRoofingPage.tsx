@@ -83,6 +83,71 @@ export default function CommercialRoofingPage() {
           </div>
         </section>
 
+        {/* Perfect for HOAs, Condos & Multi-Building */}
+        <section className="py-16 bg-black border-b border-neutral-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Perfect for HOAs, Condos & Multi-Building Communities
+              </h2>
+              <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
+                We understand the unique needs of association and multi-family projects
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <FileText className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Detailed Proposals & Scopes</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    We provide comprehensive proposals with line-item breakdowns, warranty details, and multiple options to fit your budget and reserve study.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <Users className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Board & Manager Coordination</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    Our team attends board meetings, coordinates with property managers, and maintains clear communication throughout every phase of your project.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <Clock className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Phased Installation</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    We schedule work to minimize disruption to residents and operations, phasing installations around tenant needs and business hours.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-neutral-950 border border-neutral-800 rounded-xl">
+                <Shield className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Long-Term Warranty Options</h3>
+                  <p className="text-neutral-300 leading-relaxed">
+                    Choose from 10–25 year warranty programs with manufacturer-backed coverage and our workmanship guarantee for complete peace of mind.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-all duration-200 shadow-lg shadow-red-900/50"
+              >
+                Request a Commercial Roof Assessment
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Who We Serve */}
         <section className="py-20 bg-neutral-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
