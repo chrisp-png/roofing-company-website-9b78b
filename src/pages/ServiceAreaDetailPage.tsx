@@ -16,9 +16,9 @@ export default function ServiceAreaDetailPage() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'All Phase Construction USA',
-    image: 'https://allphaseconstructionusa.com/logo.png',
-    '@id': 'https://allphaseconstructionusa.com',
-    url: `https://allphaseconstructionusa.com/service-areas/${cityInfo.slug}`,
+    image: 'https://allphaseusa.com/logo.png',
+    '@id': 'https://allphaseusa.com',
+    url: `https://allphaseusa.com/service-areas/${cityInfo.slug}`,
     telephone: '754-227-5605',
     address: {
       '@type': 'PostalAddress',

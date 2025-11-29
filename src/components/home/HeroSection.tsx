@@ -28,8 +28,8 @@ export default function HeroSection() {
             All Phase Construction USA installs code-compliant roofing systems for Broward and Palm Beach Counties, with a strong focus on Boca Raton and the surrounding coastal communities.
           </p>
 
-          <p className="text-sm md:text-base text-neutral-400 mb-8 font-medium">
-            FL Licenses: CGC1526236 • CCC1331464 • Dual Licensed GC + Roofing Contractor
+          <p className="text-sm md:text-base text-neutral-400 mb-8 font-medium mt-2">
+            CGC1526236 • CCC1331464 • Dual Licensed GC + Roofing Contractor
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
