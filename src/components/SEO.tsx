@@ -3,6 +3,9 @@ import { useEffect } from 'react';
 interface SEOProps {
   title: string;
   description: string;
+  url?: string;
+  ogImageUrl?: string;
+  schemaJson?: object;
   canonical?: string;
   ogTitle?: string;
   ogDescription?: string;
@@ -12,6 +15,9 @@ interface SEOProps {
 export default function SEO({
   title,
   description,
+  url,
+  ogImageUrl,
+  schemaJson,
   canonical,
   ogTitle,
   ogDescription,
@@ -20,40 +26,55 @@ export default function SEO({
   useEffect(() => {
     document.title = title;
 
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', description);
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = description;
-      document.head.appendChild(meta);
+    const updateOrCreateMeta = (name: string, content: string, isProperty = false) => {
+      const attribute = isProperty ? 'property' : 'name';
+      let meta = document.querySelector(`meta[${attribute}="${name}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attribute, name);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    };
+
+    updateOrCreateMeta('description', description);
+    updateOrCreateMeta('robots', 'index,follow');
+
+    updateOrCreateMeta('og:title', ogTitle || title, true);
+    updateOrCreateMeta('og:description', ogDescription || description, true);
+    updateOrCreateMeta('og:type', 'website', true);
+
+    if (url) {
+      updateOrCreateMeta('og:url', url, true);
     }
 
-    if (canonical) {
+    if (ogImageUrl || ogImage) {
+      updateOrCreateMeta('og:image', ogImageUrl || ogImage || '', true);
+    }
+
+    if (canonical || url) {
       let linkCanonical = document.querySelector('link[rel="canonical"]');
       if (!linkCanonical) {
         linkCanonical = document.createElement('link');
         linkCanonical.setAttribute('rel', 'canonical');
         document.head.appendChild(linkCanonical);
       }
-      linkCanonical.setAttribute('href', canonical);
+      linkCanonical.setAttribute('href', canonical || url || '');
     }
 
-    const updateMetaTag = (property: string, content: string) => {
-      let meta = document.querySelector(`meta[property="${property}"]`);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute('property', property);
-        document.head.appendChild(meta);
+    let schemaScript = document.querySelector('script[data-schema="true"]');
+    if (schemaJson) {
+      if (!schemaScript) {
+        schemaScript = document.createElement('script');
+        schemaScript.setAttribute('type', 'application/ld+json');
+        schemaScript.setAttribute('data-schema', 'true');
+        document.head.appendChild(schemaScript);
       }
-      meta.setAttribute('content', content);
-    };
-
-    if (ogTitle) updateMetaTag('og:title', ogTitle);
-    if (ogDescription) updateMetaTag('og:description', ogDescription);
-    if (ogImage) updateMetaTag('og:image', ogImage);
-  }, [title, description, canonical, ogTitle, ogDescription, ogImage]);
+      schemaScript.textContent = JSON.stringify(schemaJson);
+    } else if (schemaScript) {
+      schemaScript.remove();
+    }
+  }, [title, description, url, ogImageUrl, schemaJson, canonical, ogTitle, ogDescription, ogImage]);
 
   return null;
 }
