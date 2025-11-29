@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Calculator, Phone } from 'lucide-react';
 
 export default function FlatRoofingPage() {
@@ -128,6 +129,8 @@ export default function FlatRoofingPage() {
             </div>
           </div>
         </section>
+
+        <AuthorityGroup />
       </div>
     </>
   );

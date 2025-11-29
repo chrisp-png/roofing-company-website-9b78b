@@ -6,6 +6,7 @@ import Step2RoofSize from './Step2RoofSize';
 import Step3Material from './Step3Material';
 import Step4TierComplexity from './Step4TierComplexity';
 import Step5Results from './Step5Results';
+import AuthorityGroup from '../authority/AuthorityGroup';
 
 export default function RoofCostCalculator() {
   const [state, setState] = useState<CalculatorState>(initialCalculatorState);
@@ -152,6 +153,8 @@ export default function RoofCostCalculator() {
           </p>
         </div>
       </div>
+
+      <AuthorityGroup />
     </div>
   );
 }

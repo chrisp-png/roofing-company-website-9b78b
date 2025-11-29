@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Building2, Shield, Phone, FileText, Check, AlertCircle } from 'lucide-react';
 
 export default function CommercialRoofingPage() {
@@ -280,6 +281,8 @@ export default function CommercialRoofingPage() {
             </div>
           </div>
         </section>
+
+        <AuthorityGroup />
       </div>
     </>
   );
