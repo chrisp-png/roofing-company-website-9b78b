@@ -101,8 +101,8 @@ export default function WindMitigationPage() {
   return (
     <>
       <SEO
-        title="Wind Mitigation & Insurance Savings | All Phase Construction USA"
-        description="Reduce your Florida homeowners insurance by $500–$6,500/year with wind mitigation upgrades. All Phase Construction USA provides expert roof improvements, SWR installation, and Form 1802 coordination for Broward & Palm Beach Counties."
+        title="Wind Mitigation & HVHZ Roofing | All Phase Construction USA"
+        description="Wind mitigation upgrades for Broward and Palm Beach Counties. Reduce insurance costs with SWR, roof-to-wall connections, and code-compliant installations. Request a roof assessment today."
       />
 
       <Schema type="FAQPage" faqs={faqs} />

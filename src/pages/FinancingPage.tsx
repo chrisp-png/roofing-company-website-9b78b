@@ -131,8 +131,8 @@ export default function FinancingPage() {
   return (
     <>
       <SEO
-        title="Roof Financing Options | All Phase Construction USA"
-        description="Explore roof financing options in South Florida, including My Safe Florida Home grants, condo financing, and zero-down loan programs. Learn how All Phase Construction USA can help."
+        title="Roof Financing & Grants | All Phase Construction USA"
+        description="Roof financing options for Broward and Palm Beach Counties. My Safe Florida Home grants, zero-down loans, and insurance claim assistance. Use our Roof Cost Estimator to get started."
       />
 
       <div className="bg-black text-white min-h-screen">

@@ -23,7 +23,7 @@ export default function BlogPage() {
     <>
       <SEO
         title="Roofing Blog | All Phase Construction USA"
-        description="Expert roofing advice for South Florida homeowners. Learn about tile roofing, underlayment, wind mitigation, insurance savings, hurricane prep, and avoiding roofing scams."
+        description="Expert roofing advice for Broward and Palm Beach Counties. Learn about tile, metal, shingle roofing, wind mitigation, insurance savings, and hurricane preparation tips."
       />
 
       <div className="bg-black text-white min-h-screen">

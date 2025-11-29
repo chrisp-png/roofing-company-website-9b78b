@@ -137,9 +137,9 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Request a Roof Assessment | Contact All Phase Construction USA"
-        description="Schedule a free roof assessment in Broward & Palm Beach Counties. Expert roofing contractor for residential, commercial, and HOA properties. Call 754-227-5605."
-        canonicalUrl="/contact"
+        title="Contact All Phase Construction USA | Request Roof Assessment"
+        description="Contact All Phase Construction USA for a free roof assessment in Broward and Palm Beach Counties. Residential, commercial, and HOA roofing services. Call 754-227-5605."
+        canonical="/contact"
       />
 
       <div className="bg-black text-white min-h-screen">

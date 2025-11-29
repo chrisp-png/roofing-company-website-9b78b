@@ -29,9 +29,9 @@ export default function CommercialRoofingPage() {
   return (
     <>
       <SEO
-        title="Commercial & HOA Roofing in South Florida | All Phase Construction"
-        description="Expert commercial and HOA roofing contractor in Broward & Palm Beach. Flat roofs, tile roofs, metal systems. Dual-licensed for structural work. Serving condos, associations, and businesses."
-        canonicalUrl="/commercial-roofing"
+        title="Commercial & HOA Roofing | All Phase Construction USA – Broward & Palm Beach"
+        description="Commercial and HOA roofing for Broward and Palm Beach Counties. Flat roofs, tile systems, metal roofs. Dual-licensed for structural work. Serving condos, associations, and businesses."
+        canonical="/commercial-roofing"
       />
 
       <div className="bg-black text-white min-h-screen">

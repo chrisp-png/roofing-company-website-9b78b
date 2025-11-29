@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { CalculatorState, initialCalculatorState } from './CalculatorTypes';
 import Step1PropertyType from './Step1PropertyType';
 import Step2RoofSize from './Step2RoofSize';
@@ -8,6 +9,20 @@ import Step5Results from './Step5Results';
 
 export default function RoofCostCalculator() {
   const [state, setState] = useState<CalculatorState>(initialCalculatorState);
+  const location = useLocation();
+  const [cityName, setCityName] = useState<string>('');
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const city = searchParams.get('city');
+    if (city) {
+      const formatted = city
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+      setCityName(formatted);
+    }
+  }, [location]);
 
   const updateState = (updates: Partial<CalculatorState>) => {
     setState((prev) => ({ ...prev, ...updates }));
@@ -54,6 +69,11 @@ export default function RoofCostCalculator() {
           <p className="text-xl text-neutral-300">
             Get an instant estimate for your roofing project
           </p>
+          {cityName && (
+            <p className="text-base text-neutral-400 mt-3">
+              You're estimating a roof in {cityName}, FL. These numbers are tuned for typical Broward & Palm Beach homes.
+            </p>
+          )}
         </div>
 
         <div className="mb-8">

@@ -33,9 +33,9 @@ export default function ResidentialRoofingPage() {
   return (
     <>
       <SEO
-        title="Residential Roofing in Broward & Palm Beach Counties | All Phase Construction"
-        description="Expert residential roofing in South Florida. Tile, metal, shingle, and flat roof installation. Dual-licensed contractor serving Boca Raton, Deerfield Beach, Coral Springs, and more."
-        canonicalUrl="/residential-roofing"
+        title="Residential Roofing – Tile, Metal, Shingle & Flat | All Phase Construction USA"
+        description="Expert residential roofing for Broward and Palm Beach Counties. Tile, metal, shingle, and flat roof systems with wind mitigation. Use our Roof Cost Estimator or request a free assessment."
+        canonical="/residential-roofing"
       />
 
       <div className="bg-black text-white min-h-screen">
