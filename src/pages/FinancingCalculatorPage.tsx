@@ -139,6 +139,17 @@ export default function FinancingCalculatorPage() {
           ) : (
             <>
 
+          <div className="bg-gradient-to-r from-green-900/30 to-green-800/20 border border-green-600/40 rounded-xl p-6 mb-8">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-green-400 mb-2">
+                $0 down options may be available for qualified homeowners.
+              </h3>
+              <p className="text-neutral-300 text-sm">
+                Ask your rep during your complimentary inspection.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-neutral-950 border border-neutral-800 rounded-2xl p-8 mb-8">
             <div className="mb-8">
               <label className="block text-sm font-semibold text-neutral-400 mb-3">
@@ -232,10 +243,16 @@ export default function FinancingCalculatorPage() {
           </div>
 
           <div className="space-y-6 mb-8">
-            <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-red-900/20 to-red-700/10 border-2 border-red-500/30 rounded-2xl p-8 relative">
+              <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                Most Popular
+              </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Better Tier (Recommended)
               </h3>
+              <p className="text-neutral-300 text-sm mb-6">
+                Strong value and performance for most South Florida homes.
+              </p>
               <p className="text-neutral-400 mb-6">Estimated Monthly Payment:</p>
               <div className="text-center mb-4">
                 <div className="text-5xl font-bold text-red-500 mb-2">
@@ -258,10 +275,16 @@ export default function FinancingCalculatorPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-900/20 to-orange-700/10 border-2 border-orange-500/30 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-orange-900/20 to-orange-700/10 border-2 border-orange-500/30 rounded-2xl p-8 relative">
+              <div className="absolute top-4 right-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                Premium Protection
+              </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Best Tier (Upgraded System)
               </h3>
+              <p className="text-neutral-300 text-sm mb-6">
+                Maximum protection, longevity, and potential long-term savings.
+              </p>
               <p className="text-neutral-400 mb-6">Estimated Monthly Payment:</p>
               <div className="text-center mb-4">
                 <div className="text-5xl font-bold text-orange-500 mb-2">
@@ -289,6 +312,43 @@ export default function FinancingCalculatorPage() {
                 <strong>Good news:</strong> You may qualify for longer terms (up to 20 years), which can significantly lower your monthly payment. Your rep will be able to discuss this with you when he comes for your complimentary inspection.
               </p>
             </div>
+          </div>
+
+          <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-white mb-6">
+              Why Many Homeowners Choose the Best Tier
+            </h3>
+            <ul className="space-y-3 text-neutral-300">
+              <li className="flex items-start gap-3">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Longer roof service life with fewer replacement cycles.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Stronger performance in severe wind and storm events.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Better chance of qualifying for maximum wind-mitigation insurance discounts.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Higher curb appeal and resale value.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-orange-500 mt-1">•</span>
+                <span>Less risk of surprise repair expenses down the road.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-red-950/30 border-2 border-red-700/50 rounded-2xl p-8 mb-8">
+            <h3 className="text-2xl font-bold text-red-400 mb-4">
+              Why Waiting Can Cost More
+            </h3>
+            <p className="text-neutral-300 leading-relaxed">
+              Insurance rates, deductibles, and building-code requirements in South Florida continue to tighten. Delaying a needed roof replacement can mean missing out on potential discounts, facing higher premiums, or rushing into a project right before storm season. Taking action now lets you plan your roof, your financing, and your insurance credits on your terms.
+            </p>
           </div>
 
           <div className="bg-yellow-900/20 border-2 border-yellow-600/50 rounded-2xl p-8 mb-8">
@@ -330,7 +390,7 @@ export default function FinancingCalculatorPage() {
                   to="/contact"
                   className="px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors text-center"
                 >
-                  Schedule Your Inspection
+                  Schedule Your Roof & Attic Inspection
                 </Link>
               </div>
               <p className="text-center text-sm text-neutral-400">
@@ -356,7 +416,7 @@ export default function FinancingCalculatorPage() {
               to="/roof-cost-calculator"
               className="text-red-500 hover:text-red-400 underline"
             >
-              ← Back to Roof Cost Calculator
+              ← Back to My Estimate Summary
             </Link>
           </div>
           </>
