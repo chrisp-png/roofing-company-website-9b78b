@@ -160,7 +160,7 @@ export default function ResidentialRoofingPage() {
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">Transparent Pricing</h3>
                       <p className="text-neutral-300">
-                        Use our Roof Cost Calculator to get instant ballpark pricing, or schedule a free assessment for a detailed, site-specific quote.
+                        <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">Use our roof cost calculator</Link> to get instant ballpark pricing, or schedule a free assessment for a detailed, site-specific quote.
                       </p>
                     </div>
                   </div>

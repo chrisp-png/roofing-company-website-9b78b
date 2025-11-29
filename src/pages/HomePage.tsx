@@ -15,6 +15,7 @@ export default function HomePage() {
     "name": "All Phase Construction USA, LLC",
     "url": "https://allphaseusa.com",
     "telephone": "754-227-5605",
+    "email": "info@allphaseusa.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "590 Goolsby Blvd",
@@ -24,8 +25,50 @@ export default function HomePage() {
       "addressCountry": "US"
     },
     "areaServed": [
-      "Broward County, FL",
-      "Palm Beach County, FL"
+      {
+        "@type": "State",
+        "name": "Florida"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Broward County"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County"
+      },
+      {
+        "@type": "City",
+        "name": "Boca Raton"
+      },
+      {
+        "@type": "City",
+        "name": "Deerfield Beach"
+      },
+      {
+        "@type": "City",
+        "name": "Coral Springs"
+      },
+      {
+        "@type": "City",
+        "name": "Coconut Creek"
+      },
+      {
+        "@type": "City",
+        "name": "Delray Beach"
+      },
+      {
+        "@type": "City",
+        "name": "Pompano Beach"
+      },
+      {
+        "@type": "City",
+        "name": "Fort Lauderdale"
+      },
+      {
+        "@type": "City",
+        "name": "West Palm Beach"
+      }
     ],
     "description": "Dual-licensed Florida General Contractor and Roofing Contractor specializing in tile, metal, shingle, and flat roofs in South Florida.",
     "geo": {
@@ -38,8 +81,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="All Phase Construction USA | Broward & Palm Beach Roofing Contractor"
-        description="All Phase Construction USA installs code-compliant roofing systems for Broward and Palm Beach Counties, with a strong focus on Boca Raton and surrounding coastal communities."
+        title="All Phase Construction USA | Roofing Contractor in Deerfield Beach, FL"
+        description="Licensed roofing and general contractor in Deerfield Beach, FL. We install tile, metal, shingle, and flat roofs across Broward and Palm Beach counties. Free estimates & financing."
         url="https://allphaseusa.com"
         schemaJson={localBusinessSchema}
       />

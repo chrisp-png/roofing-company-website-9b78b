@@ -7,6 +7,7 @@ import Step3Material from './Step3Material';
 import Step4TierComplexity from './Step4TierComplexity';
 import Step5Results from './Step5Results';
 import AuthorityGroup from '../authority/AuthorityGroup';
+import FAQSection from './FAQSection';
 
 export default function RoofCostCalculator() {
   const [state, setState] = useState<CalculatorState>(initialCalculatorState);
@@ -65,7 +66,7 @@ export default function RoofCostCalculator() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Roof Cost Calculator
+            How Much Does a Roof Cost in South Florida? Roof Cost Calculator
           </h1>
           <p className="text-xl text-neutral-300">
             Get an instant estimate for your roofing project
@@ -155,6 +156,8 @@ export default function RoofCostCalculator() {
       </div>
 
       <AuthorityGroup />
+
+      <FAQSection />
     </div>
   );
 }

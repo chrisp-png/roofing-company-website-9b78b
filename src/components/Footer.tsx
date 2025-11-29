@@ -19,7 +19,7 @@ export default function Footer() {
                 <a href="tel:754-227-5605" className="hover:text-white transition-colors duration-200">Phone: 754-227-5605</a>
               </div>
               <div>
-                <a href="mailto:leads@allphaseusa.com" className="hover:text-white transition-colors duration-200">Email: leads@allphaseusa.com</a>
+                <a href="mailto:info@allphaseusa.com" className="hover:text-white transition-colors duration-200">Email: info@allphaseusa.com</a>
               </div>
             </div>
           </div>

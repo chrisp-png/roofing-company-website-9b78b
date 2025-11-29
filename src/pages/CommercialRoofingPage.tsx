@@ -78,7 +78,7 @@ export default function CommercialRoofingPage() {
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">On-Site Inspection Required</h3>
                     <p className="text-neutral-300 leading-relaxed">
-                      Commercial and HOA roofs typically require an on-site inspection to assess existing conditions, structural requirements, drainage, access, and association-specific considerations. Please contact us to schedule a free commercial roof assessment.
+                      Commercial and HOA roofs typically require an on-site inspection to assess existing conditions, structural requirements, drainage, access, and association-specific considerations. For residential projects, you can <Link to="/roof-cost-calculator" className="text-red-500 hover:text-red-400 font-semibold">estimate your roof cost in South Florida</Link> using our calculator. Please contact us to schedule a free commercial roof assessment.
                     </p>
                   </div>
                 </div>
