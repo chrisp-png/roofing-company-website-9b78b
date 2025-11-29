@@ -86,7 +86,7 @@ export default function CityRoofCostTemplate({
       <SEO
         title={`How Much Does a Roof Cost in ${cityName}, FL? | 2025 Roofing Guide`}
         description={`See 2025 roof cost ranges for shingle, tile, metal, and flat roofs in ${cityName}, FL. Free calculator, ${hoaCommon ? 'HOA assistance, ' : ''}and insurance guidance from All Phase Construction USA.`}
-        canonical={`/roof-cost-${citySlug}`}
+        canonical={`https://chrisp-png-roofing-c-gxj0.bolt.host/roof-cost/${citySlug}`}
         schemaJson={faqSchema}
       />
 
