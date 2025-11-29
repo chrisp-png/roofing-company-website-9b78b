@@ -531,6 +531,71 @@ export default function ResidentialRoofingPage() {
           </div>
         </section>
 
+        {/* Popular Residential Roofing Areas */}
+        <section className="py-20 bg-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Popular Residential Roofing Areas We Serve
+              </h2>
+              <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
+                Click to see roof cost guides and local insights for your city
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+              <Link
+                to="/roof-cost/boca-raton"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Boca Raton
+              </Link>
+              <Link
+                to="/roof-cost/deerfield-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Deerfield Beach
+              </Link>
+              <Link
+                to="/roof-cost/pompano-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Pompano Beach
+              </Link>
+              <Link
+                to="/roof-cost/coral-springs"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Coral Springs
+              </Link>
+              <Link
+                to="/roof-cost/coconut-creek"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Coconut Creek
+              </Link>
+              <Link
+                to="/roof-cost/parkland"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Parkland
+              </Link>
+              <Link
+                to="/roof-cost/delray-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Delray Beach
+              </Link>
+              <Link
+                to="/roof-cost/boynton-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Boynton Beach
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-20 bg-neutral-950">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

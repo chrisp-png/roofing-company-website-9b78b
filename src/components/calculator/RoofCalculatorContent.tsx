@@ -1,7 +1,30 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calculator, Phone, ChevronDown, ChevronUp, DollarSign, Shield, CheckCircle } from 'lucide-react';
+import { Calculator, Phone, ChevronDown, ChevronUp, DollarSign, Shield, CheckCircle, MapPin } from 'lucide-react';
 import RoofCostCalculator from './RoofCostCalculator';
+
+const cities = [
+  { name: 'Boca Raton', slug: 'boca-raton' },
+  { name: 'Deerfield Beach', slug: 'deerfield-beach' },
+  { name: 'Pompano Beach', slug: 'pompano-beach' },
+  { name: 'Lighthouse Point', slug: 'lighthouse-point' },
+  { name: 'Highland Beach', slug: 'highland-beach' },
+  { name: 'Delray Beach', slug: 'delray-beach' },
+  { name: 'Boynton Beach', slug: 'boynton-beach' },
+  { name: 'Lake Worth Beach', slug: 'lake-worth-beach' },
+  { name: 'West Palm Beach', slug: 'west-palm-beach' },
+  { name: 'Coral Springs', slug: 'coral-springs' },
+  { name: 'Coconut Creek', slug: 'coconut-creek' },
+  { name: 'Parkland', slug: 'parkland' },
+  { name: 'Margate', slug: 'margate' },
+  { name: 'Tamarac', slug: 'tamarac' },
+  { name: 'Fort Lauderdale', slug: 'fort-lauderdale' },
+  { name: 'Wilton Manors', slug: 'wilton-manors' },
+  { name: 'Oakland Park', slug: 'oakland-park' },
+  { name: 'Sunrise', slug: 'sunrise' },
+  { name: 'Plantation', slug: 'plantation' },
+  { name: 'Hollywood', slug: 'hollywood' },
+];
 
 interface FAQItem {
   question: string;
@@ -308,6 +331,35 @@ export default function RoofCalculatorContent() {
             <p className="text-sm text-neutral-400 mt-6">
               Serving <Link to="/residential-roofing" className="text-red-500 hover:text-red-400 font-semibold">residential</Link> and commercial properties throughout Broward and Palm Beach Counties
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* City Cost Guides Section */}
+      <section className="py-16 bg-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              See Roof Cost Guides for Your City
+            </h2>
+            <p className="text-xl text-neutral-300">
+              Choose your city below to see typical price ranges and details for your area
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {cities.map((city) => (
+              <Link
+                key={city.slug}
+                to={`/roof-cost/${city.slug}`}
+                className="bg-neutral-950 border border-neutral-800 hover:border-red-500 rounded-lg p-4 text-center transition-all duration-300 hover:shadow-lg hover:shadow-red-900/20 group"
+              >
+                <MapPin className="w-5 h-5 text-red-500 mx-auto mb-2" />
+                <p className="text-white font-semibold text-sm group-hover:text-red-500 transition-colors">
+                  {city.name}
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

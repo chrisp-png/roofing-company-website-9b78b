@@ -3,30 +3,27 @@ import SEO from '../components/SEO';
 import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { MapPin, Calculator, Shield, CheckCircle } from 'lucide-react';
 
-const browardCountyCities = [
-  { name: 'Deerfield Beach', slug: 'deerfield-beach' },
-  { name: 'Pompano Beach', slug: 'pompano-beach' },
-  { name: 'Lighthouse Point', slug: 'lighthouse-point' },
-  { name: 'Lauderdale-by-the-Sea', slug: 'lauderdale-by-the-sea' },
-  { name: 'Fort Lauderdale', slug: 'fort-lauderdale' },
-  { name: 'Coral Springs', slug: 'coral-springs' },
-  { name: 'Coconut Creek', slug: 'coconut-creek' },
-  { name: 'Parkland', slug: 'parkland' },
-  { name: 'Tamarac', slug: 'tamarac' },
-  { name: 'Margate', slug: 'margate' },
-];
-
-const palmBeachCountyCities = [
-  { name: 'Boca Raton', slug: 'boca-raton' },
-  { name: 'Delray Beach', slug: 'delray-beach' },
-  { name: 'Boynton Beach', slug: 'boynton-beach' },
-  { name: 'Lake Worth Beach', slug: 'lake-worth-beach' },
-  { name: 'West Palm Beach', slug: 'west-palm-beach' },
-  { name: 'Wellington', slug: 'wellington' },
-  { name: 'Palm Beach Gardens', slug: 'palm-beach-gardens' },
-  { name: 'Jupiter', slug: 'jupiter' },
-  { name: 'Greenacres', slug: 'greenacres' },
-  { name: 'Palm Springs', slug: 'palm-springs' },
+const allRoofCostCities = [
+  { name: 'Boca Raton', slug: 'boca-raton', county: 'Palm Beach' },
+  { name: 'Deerfield Beach', slug: 'deerfield-beach', county: 'Broward' },
+  { name: 'Pompano Beach', slug: 'pompano-beach', county: 'Broward' },
+  { name: 'Lighthouse Point', slug: 'lighthouse-point', county: 'Broward' },
+  { name: 'Highland Beach', slug: 'highland-beach', county: 'Palm Beach' },
+  { name: 'Delray Beach', slug: 'delray-beach', county: 'Palm Beach' },
+  { name: 'Boynton Beach', slug: 'boynton-beach', county: 'Palm Beach' },
+  { name: 'Lake Worth Beach', slug: 'lake-worth-beach', county: 'Palm Beach' },
+  { name: 'West Palm Beach', slug: 'west-palm-beach', county: 'Palm Beach' },
+  { name: 'Coral Springs', slug: 'coral-springs', county: 'Broward' },
+  { name: 'Coconut Creek', slug: 'coconut-creek', county: 'Broward' },
+  { name: 'Parkland', slug: 'parkland', county: 'Broward' },
+  { name: 'Margate', slug: 'margate', county: 'Broward' },
+  { name: 'Tamarac', slug: 'tamarac', county: 'Broward' },
+  { name: 'Fort Lauderdale', slug: 'fort-lauderdale', county: 'Broward' },
+  { name: 'Wilton Manors', slug: 'wilton-manors', county: 'Broward' },
+  { name: 'Oakland Park', slug: 'oakland-park', county: 'Broward' },
+  { name: 'Sunrise', slug: 'sunrise', county: 'Broward' },
+  { name: 'Plantation', slug: 'plantation', county: 'Broward' },
+  { name: 'Hollywood', slug: 'hollywood', county: 'Broward' },
 ];
 
 export default function ServiceAreasPage() {
@@ -65,49 +62,41 @@ export default function ServiceAreasPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-8">
-              <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-                <MapPin className="w-8 h-8 text-red-500" />
-                Broward County Roofing Services
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Roof Cost Guides by City
               </h2>
-              <ul className="space-y-3">
-                {browardCountyCities.map((city) => (
-                  <li key={city.slug}>
-                    <Link
-                      to={`/roof-cost-${city.slug}`}
-                      className="flex items-center gap-3 text-lg text-neutral-300 hover:text-red-500 transition-colors group"
-                    >
-                      <span className="text-red-500 font-bold">→</span>
-                      <span className="group-hover:underline">
-                        How Much Does a Roof Cost in {city.name}?
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-lg text-neutral-300 max-w-3xl mx-auto">
+                Explore detailed roof cost information, typical pricing ranges, and local insights for each city we serve.
+              </p>
             </div>
 
-            <div className="bg-neutral-900 border border-neutral-700 rounded-2xl p-8">
-              <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-                <MapPin className="w-8 h-8 text-red-500" />
-                Palm Beach County Roofing Services
-              </h2>
-              <ul className="space-y-3">
-                {palmBeachCountyCities.map((city) => (
-                  <li key={city.slug}>
-                    <Link
-                      to={`/roof-cost-${city.slug}`}
-                      className="flex items-center gap-3 text-lg text-neutral-300 hover:text-red-500 transition-colors group"
-                    >
-                      <span className="text-red-500 font-bold">→</span>
-                      <span className="group-hover:underline">
-                        How Much Does a Roof Cost in {city.name}?
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {allRoofCostCities.map((city) => (
+                <Link
+                  key={city.slug}
+                  to={`/roof-cost/${city.slug}`}
+                  className="bg-neutral-900 border border-neutral-700 hover:border-red-500 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:shadow-red-900/20 group"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-bold text-white group-hover:text-red-500 transition-colors">
+                      {city.name}, FL
+                    </h3>
+                    <MapPin className="w-5 h-5 text-red-500 flex-shrink-0" />
+                  </div>
+                  <p className="text-neutral-400 text-sm mb-3">
+                    {city.county} County
+                  </p>
+                  <p className="text-neutral-300 leading-relaxed">
+                    See typical roof costs and get a free estimate in {city.name}.
+                  </p>
+                  <div className="mt-4 flex items-center text-red-500 font-semibold text-sm group-hover:gap-2 transition-all">
+                    <span>View Cost Guide</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
 

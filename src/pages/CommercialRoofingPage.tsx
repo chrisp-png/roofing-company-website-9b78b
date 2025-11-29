@@ -484,6 +484,65 @@ export default function CommercialRoofingPage() {
           </div>
         </section>
 
+        {/* Commercial & Multi-Family Cities */}
+        <section className="py-20 bg-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Commercial & Multi-Family Roofing in These Cities
+              </h2>
+              <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
+                Click to see roof cost guides and commercial roofing insights for your city
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+              <Link
+                to="/roof-cost/boca-raton"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Boca Raton
+              </Link>
+              <Link
+                to="/roof-cost/deerfield-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Deerfield Beach
+              </Link>
+              <Link
+                to="/roof-cost/pompano-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Pompano Beach
+              </Link>
+              <Link
+                to="/roof-cost/fort-lauderdale"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Fort Lauderdale
+              </Link>
+              <Link
+                to="/roof-cost/coral-springs"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Coral Springs
+              </Link>
+              <Link
+                to="/roof-cost/hollywood"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                Hollywood
+              </Link>
+              <Link
+                to="/roof-cost/west-palm-beach"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-950 border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold"
+              >
+                West Palm Beach
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-20 bg-neutral-950">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

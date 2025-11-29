@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../SEO';
-import { Phone, Calculator, ChevronDown, ChevronUp, CheckCircle, DollarSign, Home, Shield } from 'lucide-react';
+import { Phone, Calculator, ChevronDown, ChevronUp, CheckCircle, DollarSign, Home, Shield, MapPin } from 'lucide-react';
+import { nearbyCitiesMap } from '../../config/nearbyCitiesMap';
 
 interface CityRoofCostTemplateProps {
   cityName: string;
@@ -515,6 +516,34 @@ export default function CityRoofCostTemplate({
             </a>
           </div>
         </section>
+
+        {nearbyCitiesMap[citySlug] && nearbyCitiesMap[citySlug].length > 0 && (
+          <section className="py-16 bg-neutral-950">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  Nearby Cities We Also Serve
+                </h2>
+                <p className="text-neutral-300">
+                  We provide roofing services throughout South Florida
+                </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-3">
+                {nearbyCitiesMap[citySlug].map((nearbyCity) => (
+                  <Link
+                    key={nearbyCity.slug}
+                    to={`/roof-cost/${nearbyCity.slug}`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-black border border-neutral-800 hover:border-red-500 text-white hover:text-red-500 rounded-lg transition-all duration-300 font-semibold text-sm"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    {nearbyCity.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="py-20 bg-black">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
