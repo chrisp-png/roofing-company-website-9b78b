@@ -16,9 +16,21 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'pdf-vendor': ['jspdf'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('jspdf')) {
+              return 'pdf-vendor';
+            }
+            if (id.includes('react-router-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
+            if (id.includes('react-dom') || id.includes('react/')) {
+              return 'react-vendor';
+            }
+            if (id.includes('scheduler')) {
+              return 'react-vendor';
+            }
+          }
         },
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.');
@@ -37,5 +49,6 @@ export default defineConfig({
     cssCodeSplit: true,
     minify: 'esbuild',
     assetsInlineLimit: 4096,
+    target: 'es2015',
   },
 });
