@@ -5,16 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Mobile-priority preconnect and DNS prefetch -->
-    <link rel="preconnect" href="https://images.pexels.com" crossorigin media="(max-width: 768px)">
-    <link rel="dns-prefetch" href="https://images.pexels.com" media="(max-width: 768px)">
-    <link rel="preconnect" href="https://images.pexels.com" crossorigin media="(min-width: 769px)">
+    <!-- Ultra-aggressive mobile LCP preload (12KB WebP) -->
+    <link rel="preload" as="image" href="/images/hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)" type="image/webp">
 
-    <!-- Ultra-optimized mobile LCP preload (q=35) -->
-    <link rel="preload" as="image" href="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress,format&cs=tinysrgb&w=640&fm=webp&q=35" fetchpriority="high" imagesrcset="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress,format&cs=tinysrgb&w=640&fm=webp&q=35 640w, https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1280&fm=webp&q=60 1280w" imagesizes="(max-width: 640px) 640px, 1280px" media="(max-width: 768px)">
-
-    <!-- Desktop LCP preload (q=60) -->
-    <link rel="preload" as="image" href="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1920&fm=webp&q=60" fetchpriority="high" media="(min-width: 769px)">
+    <!-- Desktop LCP preload -->
+    <link rel="preload" as="image" href="/images/hero-desktop-1920.webp" fetchpriority="high" media="(min-width: 769px)" type="image/webp">
 
     <title>How Much Does a Roof Cost in South Florida? | Roof Cost Calculator – All Phase Construction USA</title>
 

@@ -6,17 +6,42 @@ export default function HeroSection() {
     <section className="relative bg-black min-h-[600px] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-red-950/30 z-10"></div>
-        <img
-          src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress,format&cs=tinysrgb&w=640&fm=webp&q=35"
-          srcSet="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress,format&cs=tinysrgb&w=640&fm=webp&q=35 640w,
-                  https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1280&fm=webp&q=60 1280w,
-                  https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1920&fm=webp&q=60 1920w"
-          sizes="(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px"
-          alt="Professional roofing"
-          className="w-full h-full object-cover opacity-40"
-          fetchpriority="high"
-          decoding="async"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcSet="/images/hero-mobile.webp"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcSet="/images/hero-mobile.jpg"
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcSet="/images/hero-desktop-1280.webp"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcSet="/images/hero-desktop-1280.jpg"
+            type="image/jpeg"
+          />
+          <source
+            srcSet="/images/hero-desktop-1920.webp"
+            type="image/webp"
+          />
+          <img
+            src="/images/hero-desktop-1920.jpg"
+            alt="Professional roofing"
+            className="w-full h-full object-cover opacity-40"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            width="1920"
+            height="1280"
+          />
+        </picture>
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
