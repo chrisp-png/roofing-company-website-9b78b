@@ -47,6 +47,7 @@ export default function Step5Results({
   onBack,
 }: Step5Props) {
   const [submitted, setSubmitted] = useState(false);
+  const [showFinancingAndChecklist, setShowFinancingAndChecklist] = useState(false);
 
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('en-US', {
@@ -468,11 +469,28 @@ export default function Step5Results({
           )}
         </motion.div>
 
-        <FinancingEstimator
-          totalProjectCost={midEstimate}
-          insuranceAnnualSavings={insuranceAnnualSavings}
-          ventilationAnnualSavings={ventilationAnnual}
-        />
+        {!showFinancingAndChecklist && (
+          <div className="mb-8 flex justify-center">
+            <button
+              onClick={() => setShowFinancingAndChecklist(true)}
+              className="px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-lg hover:bg-red-500 transition-all duration-200 shadow-lg"
+            >
+              See Monthly Payment Estimate & Contractor Checklist
+            </button>
+          </div>
+        )}
+
+        {showFinancingAndChecklist && (
+          <>
+            <FinancingEstimator
+              totalProjectCost={midEstimate}
+              insuranceAnnualSavings={insuranceAnnualSavings}
+              ventilationAnnualSavings={ventilationAnnual}
+            />
+
+            <RoofBuyersChecklist />
+          </>
+        )}
 
         <div className="mb-8 bg-neutral-900 border border-neutral-800 rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-white mb-4">
@@ -629,9 +647,9 @@ export default function Step5Results({
             </p>
           </div>
 
-          <RoofBuyersChecklist />
-
-          <UltimateRoofBuyersGuide />
+          {showFinancingAndChecklist && (
+            <UltimateRoofBuyersGuide />
+          )}
         </div>
       </div>
     );
