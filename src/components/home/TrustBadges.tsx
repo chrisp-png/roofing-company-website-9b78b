@@ -9,7 +9,7 @@ export default function TrustBadges() {
             <Shield className="w-8 h-8 text-red-500 flex-shrink-0" />
             <div>
               <p className="text-white font-bold text-sm">FL Licenses</p>
-              <p className="text-neutral-400 text-xs">CGC1526236 • CCC1331464</p>
+              <p className="text-neutral-300 text-xs">CGC1526236 • CCC1331464</p>
             </div>
           </div>
 
@@ -17,7 +17,7 @@ export default function TrustBadges() {
             <Award className="w-8 h-8 text-red-500 flex-shrink-0" />
             <div>
               <p className="text-white font-bold text-sm">Dual Licensed</p>
-              <p className="text-neutral-400 text-xs">GC + Roofing Contractor</p>
+              <p className="text-neutral-300 text-xs">GC + Roofing Contractor</p>
             </div>
           </div>
 
@@ -25,7 +25,7 @@ export default function TrustBadges() {
             <CheckCircle className="w-8 h-8 text-red-500 flex-shrink-0" />
             <div>
               <p className="text-white font-bold text-sm">HVHZ Experts</p>
-              <p className="text-neutral-400 text-xs">Florida Building Code Certified</p>
+              <p className="text-neutral-300 text-xs">Florida Building Code Certified</p>
             </div>
           </div>
         </div>

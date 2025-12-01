@@ -16,7 +16,7 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
               Why Choose Us
             </h2>
-            <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+            <p className="text-lg text-neutral-400 mb-6 leading-relaxed">
               With over 25 years of experience in the roofing industry, we've built our reputation
               on quality workmanship, reliable service, and customer satisfaction.
             </p>
@@ -57,7 +57,7 @@ export default function About() {
                   <div className="text-4xl font-bold text-neutral-900 mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-neutral-600 font-medium">
+                  <div className="text-neutral-400 font-medium">
                     {stat.label}
                   </div>
                 </div>

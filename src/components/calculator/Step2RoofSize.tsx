@@ -31,7 +31,7 @@ export default function Step2RoofSize({ selectedSize, onSelect, onNext, onBack }
           >
             <div className="flex justify-between items-center">
               <span className="text-lg font-semibold text-white">{size.label}</span>
-              <span className="text-sm text-neutral-500">{size.range} sq ft</span>
+              <span className="text-sm text-neutral-400">{size.range} sq ft</span>
             </div>
           </button>
         ))}

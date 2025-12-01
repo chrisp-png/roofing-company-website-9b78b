@@ -35,7 +35,7 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
             Comprehensive roofing solutions tailored to your needs
           </p>
         </div>

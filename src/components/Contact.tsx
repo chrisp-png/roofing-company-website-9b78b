@@ -130,7 +130,7 @@ export default function Contact() {
                       590 Goolsby Blvd<br />
                       Deerfield Beach, FL 33442
                     </div>
-                    <div className="text-[10px] text-neutral-500 mt-2">
+                    <div className="text-[10px] text-neutral-400 mt-2">
                       FL Licenses: CGC1526236 • CCC1331464
                     </div>
                     <a

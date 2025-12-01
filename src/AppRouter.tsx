@@ -2,9 +2,9 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import { ScrollToTop } from './components/ScrollToTop';
-import HomePage from './pages/HomePage';
-import RoofCalculatorPage from './pages/RoofCalculatorPage';
 
+const HomePage = lazy(() => import('./pages/HomePage'));
+const RoofCalculatorPage = lazy(() => import('./pages/RoofCalculatorPage'));
 const ResidentialRoofingPage = lazy(() => import('./pages/ResidentialRoofingPage'));
 const CommercialRoofingPage = lazy(() => import('./pages/CommercialRoofingPage'));
 const ShingleRoofingPage = lazy(() => import('./pages/ShingleRoofingPage'));

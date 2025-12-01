@@ -61,6 +61,7 @@ export default function FAQSection() {
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex items-center justify-between p-6 text-left"
+                aria-expanded={openIndex === index}
               >
                 <h3 className="text-lg font-bold text-white pr-8">
                   {faq.question}

@@ -88,7 +88,7 @@ export default function RoofBuyersChecklist() {
             {checkedItems[idx] ? (
               <CheckCircle className="w-6 h-6 text-red-500 mt-0.5 flex-shrink-0" />
             ) : (
-              <Circle className="w-6 h-6 text-neutral-600 mt-0.5 flex-shrink-0" />
+              <Circle className="w-6 h-6 text-neutral-500 mt-0.5 flex-shrink-0" />
             )}
             <p className={`leading-snug transition-colors ${
               checkedItems[idx] ? 'text-neutral-400 line-through' : 'text-neutral-200'

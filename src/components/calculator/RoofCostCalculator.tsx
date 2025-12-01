@@ -148,13 +148,13 @@ export default function RoofCostCalculator() {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-sm text-neutral-500 mb-2">
+            <p className="text-sm text-neutral-400 mb-2">
               Questions? Call us at{' '}
               <a href="tel:7542275605" className="text-red-500 hover:text-red-400">
                 754-227-5605
               </a>
             </p>
-            <p className="text-xs text-neutral-600">
+            <p className="text-xs text-neutral-400">
               All Phase Construction USA • CGC1526236 • CCC1331464
             </p>
           </div>

@@ -107,7 +107,7 @@ export default function FinancingEstimator({
                   max={totalProjectCost}
                   className="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-blue-500"
                 />
-                <p className="text-xs text-neutral-500 mt-1">
+                <p className="text-xs text-neutral-400 mt-1">
                   Defaulted to $7,500 – adjust this number to explore different payment options.
                 </p>
               </div>

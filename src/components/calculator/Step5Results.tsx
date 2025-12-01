@@ -748,7 +748,7 @@ export default function Step5Results({
         </div>
       </form>
 
-      <p className="text-center text-xs text-neutral-500">
+      <p className="text-center text-xs text-neutral-400">
         By submitting, you agree to be contacted by All Phase Construction USA regarding your roofing project.
       </p>
     </div>
