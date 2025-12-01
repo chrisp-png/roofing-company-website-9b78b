@@ -269,15 +269,14 @@ export default function UltimateRoofBuyersGuide() {
           Click &quot;Learn more&quot; on any item to see why it matters and how it protects your investment.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-6">
-          <a
-            href="/ultimate-roof-buyers-guide.pdf"
-            download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-500 transition-colors shadow-lg"
-          >
-            Download the Ultimate Roof Buyer&apos;s Guide (PDF)
-          </a>
-        </div>
+        <a
+          href="/ultimate-roof-buyers-guide.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-3 rounded-lg bg-red-600 hover:bg-red-700 text-white font-semibold shadow-lg mb-6"
+        >
+          Download the Ultimate Roof Buyer's Guide (PDF)
+        </a>
       </div>
 
       <div className="space-y-3">
