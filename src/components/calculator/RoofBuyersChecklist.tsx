@@ -23,7 +23,7 @@ const checklistItems = [
   "Tile roofs: Which foam manufacturer and foam patty size will be used?",
   "Will the permit, contract, and installation photos all match the specified foam system?",
   "Do you offer upgraded protection in vulnerable areas (eaves, valleys, rakes)?",
-  "Will you inspect and replace flashings—including cutting/re-stuccoing if needed?",
+  "Will you inspect and replace flashings—including cutting and re-stuccoing if needed?",
   "If you replace fascia or trim, will you paint it to match?",
   "Do you evaluate attic ventilation and offer options to improve airflow?",
   "Do you explain insurance and energy-savings benefits in writing?",
