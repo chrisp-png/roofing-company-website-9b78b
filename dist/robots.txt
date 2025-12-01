@@ -7,7 +7,6 @@ Disallow: /*?
 
 Sitemap: https://www.allphaseusa.com/sitemap.xml
 
-# Allow crawling of CSS and JS files
 User-agent: *
 Allow: /assets/
 Allow: /*.css$
