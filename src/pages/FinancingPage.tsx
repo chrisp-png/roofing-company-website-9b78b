@@ -45,6 +45,16 @@ export default function FinancingPage() {
 
   const lenders = [
     {
+      name: 'Service Finance',
+      features: [
+        'Preferred financing partner',
+        'Flexible payment terms up to 144 months',
+        'Zero down payment options available',
+        'Fast approval process with competitive rates',
+      ],
+      featured: true,
+    },
+    {
       name: 'GreenSky',
       features: [
         'Flexible payment terms up to 120 months',
@@ -241,11 +251,22 @@ export default function FinancingPage() {
               {lenders.map((lender, index) => (
                 <div
                   key={index}
-                  className="bg-neutral-950 border border-neutral-800 rounded-2xl p-8 hover:border-red-500/50 transition-all duration-300"
+                  className={`bg-neutral-950 rounded-2xl p-8 transition-all duration-300 ${
+                    lender.featured
+                      ? 'border-2 border-red-500 ring-2 ring-red-500/20'
+                      : 'border border-neutral-800 hover:border-red-500/50'
+                  }`}
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <DollarSign className="w-8 h-8 text-red-500" />
-                    <h3 className="text-2xl font-bold text-white">{lender.name}</h3>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">{lender.name}</h3>
+                      {lender.featured && (
+                        <span className="inline-block mt-1 px-3 py-1 bg-red-600 text-white text-xs font-bold rounded">
+                          PREFERRED PARTNER
+                        </span>
+                      )}
+                    </div>
                   </div>
 
                   <ul className="space-y-3">

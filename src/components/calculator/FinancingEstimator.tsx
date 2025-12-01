@@ -91,7 +91,7 @@ export default function FinancingEstimator({
                   className="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-blue-500"
                 />
                 <p className="text-xs text-neutral-500 mt-1">
-                  Defaulted to $7,500 – adjust this number to see different payment scenarios.
+                  Defaulted to $7,500 – adjust this number to explore different payment options.
                 </p>
               </div>
 
@@ -106,20 +106,20 @@ export default function FinancingEstimator({
 
       <div className="bg-gradient-to-br from-blue-600/20 to-blue-500/10 border border-blue-500/50 rounded-xl p-6 mb-6">
         <div className="text-center">
-          <p className="text-sm text-neutral-400 mb-2">Estimated Monthly Payment Range</p>
+          <p className="text-sm text-neutral-400 mb-2">Estimated Monthly Payment Range (based on ~60 months)</p>
           <p className="text-4xl font-bold text-blue-400 mb-3">
             {formatCurrency(lowMonthly)} – {formatCurrency(highMonthly)}
             <span className="text-xl text-neutral-400"> / month</span>
           </p>
           <p className="text-sm text-neutral-300">
-            These ranges are based on common lender programs using approximately $97–$137 per month for every $10,000 financed.
+            These ranges are based on common 60-month lender programs using approximately $97–$137 per month for every $10,000 financed.
           </p>
         </div>
       </div>
 
       <div className="bg-neutral-900/50 rounded-xl p-4 border border-neutral-700 mb-4">
         <p className="text-xs text-neutral-400 leading-relaxed">
-          <span className="font-semibold text-neutral-300">Disclaimer:</span> This tool is for illustration purposes only and does not constitute a financing offer or commitment to lend. Actual payment amounts, interest rates, and terms are provided by third-party lenders and will vary based on credit approval, loan amount, term length, and other factors.
+          <span className="font-semibold text-neutral-300">Disclaimer:</span> This tool is for illustration purposes only and does not constitute a financing offer or commitment to lend. Actual payment amounts, interest rates, and terms are provided by third-party lenders and will vary based on credit approval, loan amount, term length, and other factors. Longer-term options may be available; your All Phase representative can review financing programs with you in person.
         </p>
       </div>
 

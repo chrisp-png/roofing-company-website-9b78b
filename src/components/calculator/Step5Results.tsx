@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MATERIAL_CONFIG } from '../../config/materialConfig';
-import { Check, Building2, Download, Calculator, DollarSign, Phone, CreditCard } from 'lucide-react';
+import { Check, Building2, Download, DollarSign, Phone } from 'lucide-react';
 import DualLicensedAdvantageSection from './DualLicensedAdvantageSection';
 import TrustElements from './TrustElements';
 import RoofBuyersChecklist from './RoofBuyersChecklist';
@@ -439,13 +439,6 @@ export default function Step5Results({
                 <Phone className="w-5 h-5" />
                 Schedule Your Roof Estimate
               </a>
-              <a
-                href="/financing"
-                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 border-2 border-blue-500 text-blue-400 text-lg font-semibold rounded-lg hover:bg-blue-500/10 transition-all duration-200"
-              >
-                <CreditCard className="w-5 h-5" />
-                See Financing Options
-              </a>
             </div>
 
             <TrustElements />
@@ -578,7 +571,7 @@ export default function Step5Results({
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               Download & Explore Your Options
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="flex justify-center mb-6">
               <button
                 onClick={() => {
                   try {
@@ -607,17 +600,9 @@ export default function Step5Results({
                 <Download className="w-5 h-5" />
                 Download My Detailed Estimate (PDF)
               </button>
-
-              <a
-                href={`/financing-calculator?betterLow=${lowEstimate}&betterHigh=${highEstimate}&bestLow=${bestLowEstimate}&bestHigh=${bestHighEstimate}&roofType=${material}&roofSize=${roofSize}&name=${encodeURIComponent(name)}&material=${material}&tier=${tier}&complexity=${complexity}`}
-                className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-red-600 text-red-500 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition-colors text-center"
-              >
-                <Calculator className="w-5 h-5" />
-                See Estimated Monthly Payments
-              </a>
             </div>
             <p className="text-center text-sm text-neutral-400">
-              Download a detailed PDF or explore financing options
+              Download a detailed PDF with all your estimate information
             </p>
           </div>
 
