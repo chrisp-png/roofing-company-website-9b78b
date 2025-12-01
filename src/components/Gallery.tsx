@@ -1,31 +1,31 @@
 const projects = [
   {
-    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Modern Residential',
     category: 'Residential'
   },
   {
-    image: 'https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Commercial Complex',
     category: 'Commercial'
   },
   {
-    image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Luxury Estate',
     category: 'Residential'
   },
   {
-    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Historic Restoration',
     category: 'Restoration'
   },
   {
-    image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Business Center',
     category: 'Commercial'
   },
   {
-    image: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp',
     title: 'Suburban Home',
     category: 'Residential'
   }
@@ -53,6 +53,7 @@ export default function Gallery() {
               src={project.image}
               alt={project.title}
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-neutral-900/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
