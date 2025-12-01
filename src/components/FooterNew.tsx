@@ -9,7 +9,7 @@ export default function FooterNew() {
             <h3 className="text-xl font-bold mb-4 text-red-500">
               All Phase Construction USA, LLC
             </h3>
-            <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
+            <p className="text-neutral-300 text-sm mb-4 leading-relaxed">
               Professional roofing and general contracting solutions for Broward and Palm Beach Counties.
             </p>
             <Link
@@ -22,7 +22,7 @@ export default function FooterNew() {
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Contact Information</h4>
-            <div className="space-y-2 text-sm text-neutral-400">
+            <div className="space-y-2 text-sm text-neutral-300">
               <p>590 Goolsby Blvd</p>
               <p>Deerfield Beach, FL 33442</p>
               <p className="pt-2">
@@ -40,7 +40,7 @@ export default function FooterNew() {
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Licenses & Service Area</h4>
-            <div className="space-y-2 text-sm text-neutral-400">
+            <div className="space-y-2 text-sm text-neutral-300">
               <p className="font-bold text-white">FL General Contractor</p>
               <p className="text-red-500 font-semibold">CGC1526236</p>
               <p className="font-bold text-white mt-3">FL Roofing Contractor</p>
@@ -52,7 +52,7 @@ export default function FooterNew() {
           </div>
         </div>
 
-        <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-500">
+        <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-300">
           <p>&copy; {new Date().getFullYear()} All Phase Construction USA, LLC. All rights reserved.</p>
         </div>
       </div>
