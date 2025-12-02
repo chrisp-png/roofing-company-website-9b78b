@@ -4,6 +4,7 @@ import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Calculator, Phone } from 'lucide-react';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema';
 import EntitySummary from '../components/EntitySummary';
+import ServiceSchema from '../components/schema/ServiceSchema';
 
 export default function ShingleRoofingPage() {
   return (
@@ -19,6 +20,14 @@ export default function ShingleRoofingPage() {
           { name: "Residential Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/residential-roofing" },
           { name: "Shingle Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/shingle" }
         ]}
+      />
+      <ServiceSchema
+        serviceName="Shingle Roof Installation"
+        serviceType="Roofing"
+        description="Architectural shingle roofing with 130+ mph wind ratings and Class 4 impact resistance. Most budget-friendly option for South Florida homes."
+        priceRange="$12000-$26000"
+        areaServed={["Boca Raton", "Deerfield Beach", "Fort Lauderdale", "Coral Springs", "Pompano Beach", "Delray Beach", "West Palm Beach"]}
+        url="https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/shingle"
       />
 
       <div className="bg-black text-white min-h-screen">

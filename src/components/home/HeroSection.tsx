@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail } from 'lucide-react';
+import EntitySummary from '../EntitySummary';
 
 export default function HeroSection() {
   return (
@@ -62,6 +63,20 @@ export default function HeroSection() {
           <p className="text-sm md:text-base text-neutral-400 mb-8 font-medium mt-2">
             CGC1526236 • CCC1331464 • Dual Licensed GC + Roofing Contractor
           </p>
+
+          <div className="max-w-3xl mb-8">
+            <EntitySummary
+              title="Why Choose All Phase Construction USA"
+              items={[
+                "Dual-licensed General Contractor (CGC1526236) and Roofing Contractor (CCC1331464)",
+                "Serving Broward and Palm Beach Counties with 25+ years combined experience",
+                "Tile, metal, shingle, and flat roofing systems with hurricane-rated wind resistance",
+                "Wind mitigation installations reduce insurance premiums by $500-$6,500 annually",
+                "Free on-site assessments with transparent pricing and detailed quotes",
+                "HOA-approved materials and full Florida Building Code compliance"
+              ]}
+            />
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
             <Link

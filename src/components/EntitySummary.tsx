@@ -5,6 +5,16 @@ interface EntitySummaryProps {
   items: string[];
 }
 
+function processItemWithDataTags(text: string) {
+  return text
+    .replace(/\$(\d{1,3}(?:,\d{3})*(?:-\$?\d{1,3}(?:,\d{3})*)?)/g, (match, nums) => {
+      const cleanValue = nums.replace(/[,$-]/g, '');
+      return `<data value="${cleanValue}">${match}</data>`;
+    })
+    .replace(/(\d+)\+?\s*years?/gi, (match, num) => `<data value="${num}">${match}</data>`)
+    .replace(/(\d+)\s*mph/gi, (match, num) => `<data value="${num}">${match}</data>`);
+}
+
 export default function EntitySummary({ title = "What This Page Covers", items }: EntitySummaryProps) {
   return (
     <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-6 mb-8" role="complementary" aria-label="Page summary">
@@ -16,7 +26,7 @@ export default function EntitySummary({ title = "What This Page Covers", items }
             {items.map((item, index) => (
               <li key={index} className="text-neutral-300 text-sm leading-relaxed flex items-start gap-2">
                 <span className="text-red-500 flex-shrink-0 mt-1">•</span>
-                <span>{item}</span>
+                <span dangerouslySetInnerHTML={{ __html: processItemWithDataTags(item) }} />
               </li>
             ))}
           </ul>

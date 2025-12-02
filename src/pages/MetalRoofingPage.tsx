@@ -4,6 +4,7 @@ import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Calculator, Phone } from 'lucide-react';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema';
 import EntitySummary from '../components/EntitySummary';
+import ServiceSchema from '../components/schema/ServiceSchema';
 
 export default function MetalRoofingPage() {
   return (
@@ -19,6 +20,14 @@ export default function MetalRoofingPage() {
           { name: "Residential Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/residential-roofing" },
           { name: "Metal Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/metal" }
         ]}
+      />
+      <ServiceSchema
+        serviceName="Metal Roof Installation"
+        serviceType="Roofing"
+        description="Standing seam and mechanically seamed metal roofing installation in South Florida. 50+ year lifespan, HVHZ-rated, solar-ready platforms."
+        priceRange="$35000-$80000"
+        areaServed={["Boca Raton", "Deerfield Beach", "Fort Lauderdale", "Coral Springs", "Pompano Beach", "Delray Beach", "West Palm Beach"]}
+        url="https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/metal"
       />
 
       <div className="bg-black text-white min-h-screen">

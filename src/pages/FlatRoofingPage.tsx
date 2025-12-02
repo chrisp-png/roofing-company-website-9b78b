@@ -4,6 +4,7 @@ import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Calculator, Phone } from 'lucide-react';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema';
 import EntitySummary from '../components/EntitySummary';
+import ServiceSchema from '../components/schema/ServiceSchema';
 
 export default function FlatRoofingPage() {
   return (
@@ -19,6 +20,14 @@ export default function FlatRoofingPage() {
           { name: "Residential Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/residential-roofing" },
           { name: "Flat Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/flat" }
         ]}
+      />
+      <ServiceSchema
+        serviceName="Flat Roof Installation"
+        serviceType="Roofing"
+        description="TPO, modified bitumen, and IB PVC flat roofing systems for residential and commercial properties. Energy-efficient with 15-25 year lifespan."
+        priceRange="$10000-$32000"
+        areaServed={["Boca Raton", "Deerfield Beach", "Fort Lauderdale", "Coral Springs", "Pompano Beach", "Delray Beach", "West Palm Beach"]}
+        url="https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/flat"
       />
 
       <div className="bg-black text-white min-h-screen">

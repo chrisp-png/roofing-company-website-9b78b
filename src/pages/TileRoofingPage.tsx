@@ -4,6 +4,7 @@ import AuthorityGroup from '../components/authority/AuthorityGroup';
 import { Shield, Calculator, Phone } from 'lucide-react';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema';
 import EntitySummary from '../components/EntitySummary';
+import ServiceSchema from '../components/schema/ServiceSchema';
 
 export default function TileRoofingPage() {
   return (
@@ -19,6 +20,14 @@ export default function TileRoofingPage() {
           { name: "Residential Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/residential-roofing" },
           { name: "Tile Roofing", url: "https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/tile" }
         ]}
+      />
+      <ServiceSchema
+        serviceName="Tile Roof Installation"
+        serviceType="Roofing"
+        description="Concrete and clay tile roofing with premium foam adhesive and SWR underlayment. 50-100 year lifespan with superior hurricane protection."
+        priceRange="$30000-$70000"
+        areaServed={["Boca Raton", "Deerfield Beach", "Fort Lauderdale", "Coral Springs", "Pompano Beach", "Delray Beach", "West Palm Beach"]}
+        url="https://chrisp-png-roofing-c-gxj0.bolt.host/roof-types/tile"
       />
 
       <div className="bg-black text-white min-h-screen">
