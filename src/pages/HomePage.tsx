@@ -7,7 +7,7 @@ import TrustBar from '../components/home/TrustBar';
 import UrgencyBanner from '../components/home/UrgencyBanner';
 import ServicesGrid from '../components/home/ServicesGrid';
 import AuthorityGroup from '../components/authority/AuthorityGroup';
-import ProjectsGallery from '../components/home/ProjectsGallery';
+import CustomerGallery from '../components/home/CustomerGallery';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 import BottomCTA from '../components/home/BottomCTA';
 import HomeLocalBusinessSchema from '../components/HomeLocalBusinessSchema';
@@ -62,7 +62,7 @@ export default function HomePage() {
       <UrgencyBanner />
       <ServicesGrid />
       <AuthorityGroup />
-      <ProjectsGallery />
+      <CustomerGallery />
       <TestimonialsSection />
       <BottomCTA />
     </>
