@@ -16,8 +16,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Our new tile roof is absolutely stunning. Worth every penny!',
     city: 'Boca Raton',
     roofType: 'tile',
-    imageUrl: '/images/projects/project-1.jpg',
-    alt: 'Tile roof installation in Boca Raton, Florida',
+    imageUrl: '/images/hero-desktop-1920.jpg',
+    alt: 'Tile roof installation in Boca Raton, Florida – The Martinez Family',
     rating: 5
   },
   {
@@ -26,8 +26,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Best roofing decision we made. Metal roof looks amazing!',
     city: 'Fort Lauderdale',
     roofType: 'metal',
-    imageUrl: '/images/projects/project-2.jpg',
-    alt: 'Metal roof installation in Fort Lauderdale, Florida',
+    imageUrl: '/images/hero-desktop-1280.jpg',
+    alt: 'Metal roof installation in Fort Lauderdale, Florida – David & Linda Chen',
     rating: 5
   },
   {
@@ -36,8 +36,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'From old and damaged to beautiful and secure. Thank you!',
     city: 'Delray Beach',
     roofType: 'tile',
-    imageUrl: '/images/projects/project-3.jpg',
-    alt: 'Tile roof replacement in Delray Beach, Florida',
+    imageUrl: '/images/hero-mobile.jpg',
+    alt: 'Tile roof replacement in Delray Beach, Florida – Robert Wilson',
     rating: 5
   },
   {
@@ -46,8 +46,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Impact-rated shingles give us peace of mind during hurricane season.',
     city: 'Pompano Beach',
     roofType: 'shingle',
-    imageUrl: '/images/projects/project-4.jpg',
-    alt: 'Shingle roof installation in Pompano Beach, Florida',
+    imageUrl: '/images/hero-desktop-1920.jpg',
+    alt: 'Shingle roof installation in Pompano Beach, Florida – Jennifer Rodriguez',
     rating: 5
   },
   {
@@ -56,8 +56,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Our commercial flat roof installation was completed on time and on budget.',
     city: 'Coral Springs',
     roofType: 'flat',
-    imageUrl: '/images/projects/project-5.jpg',
-    alt: 'Commercial flat roof in Coral Springs, Florida',
+    imageUrl: '/images/hero-desktop-1280.jpg',
+    alt: 'Commercial flat roof in Coral Springs, Florida – Coral Springs Business Park',
     rating: 5
   },
   {
@@ -66,8 +66,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The crew was fantastic and our roof looks incredible!',
     city: 'Palm Beach County',
     roofType: 'shingle',
-    imageUrl: '/images/projects/project-6.jpg',
-    alt: 'Shingle roof installation in Palm Beach County, Florida',
+    imageUrl: '/images/hero-mobile.jpg',
+    alt: 'Shingle roof installation in Palm Beach County, Florida – The Thompson Family',
     rating: 5
   },
   {
@@ -76,8 +76,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Aerial view shows the incredible craftsmanship of our tile roof.',
     city: 'Boca Raton',
     roofType: 'tile',
-    imageUrl: '/images/projects/project-7.jpg',
-    alt: 'Luxury tile roof in Boca Raton, Florida',
+    imageUrl: '/images/hero-desktop-1920.jpg',
+    alt: 'Luxury tile roof in Boca Raton, Florida – Estate in Boca Raton',
     rating: 5
   },
   {
@@ -86,8 +86,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The foam adhesive attachment is a game-changer for wind resistance.',
     city: 'Broward County',
     roofType: 'tile',
-    imageUrl: '/images/projects/project-8.jpg',
-    alt: 'Hurricane-rated tile roof in Broward County, Florida',
+    imageUrl: '/images/hero-desktop-1280.jpg',
+    alt: 'Hurricane-rated tile roof in Broward County, Florida – Michael Stevens',
     rating: 5
   },
   {
@@ -96,8 +96,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Professional metal roof installation with attention to every detail.',
     city: 'Palm Beach County',
     roofType: 'metal',
-    imageUrl: '/images/projects/project-9.jpg',
-    alt: 'Standing seam metal roof in Palm Beach County, Florida',
+    imageUrl: '/images/hero-mobile.jpg',
+    alt: 'Standing seam metal roof in Palm Beach County, Florida – Sarah Martinez',
     rating: 5
   },
   {
@@ -106,8 +106,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The wind mitigation inspection saved us hundreds on insurance.',
     city: 'Delray Beach',
     roofType: 'wind_mitigation',
-    imageUrl: '/images/projects/project-10.jpg',
-    alt: 'Wind mitigation roof upgrade in Delray Beach, Florida',
+    imageUrl: '/images/hero-desktop-1920.jpg',
+    alt: 'Wind mitigation roof upgrade in Delray Beach, Florida – James Patterson',
     rating: 5
   },
   {
@@ -116,8 +116,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The commercial flat roof exceeded our expectations.',
     city: 'Fort Lauderdale',
     roofType: 'commercial',
-    imageUrl: '/images/projects/project-11.jpg',
-    alt: 'Commercial TPO roof in Fort Lauderdale, Florida',
+    imageUrl: '/images/hero-desktop-1280.jpg',
+    alt: 'Commercial TPO roof in Fort Lauderdale, Florida – Karen Williams',
     rating: 5
   },
   {
@@ -126,8 +126,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Our HOA was impressed with the quality and professionalism.',
     city: 'Parkland',
     roofType: 'hoa',
-    imageUrl: '/images/projects/project-12.jpg',
-    alt: 'HOA multi-family roof replacement in Parkland, Florida',
+    imageUrl: '/images/hero-mobile.jpg',
+    alt: 'HOA multi-family roof replacement in Parkland, Florida – The Anderson Family',
     rating: 5
   }
 ];
