@@ -1,1 +1,0 @@
-import{j as o}from"./react-vendor-BlFHl-YS.js";import{C as t}from"./CityRoofCostTemplate-Dm7IMxdI.js";import"./SEO-yfRjJ4GC.js";function m(){return o.jsx(t,{cityName:"Delray Beach",citySlug:"delray-beach",isCoastal:!0,hoaCommon:!0})}export{m as default};

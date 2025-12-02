@@ -1,1 +1,0 @@
-import{j as o}from"./react-vendor-BlFHl-YS.js";import{C as t}from"./CityRoofCostTemplate-Dm7IMxdI.js";import"./SEO-yfRjJ4GC.js";function s(){return o.jsx(t,{cityName:"Coconut Creek",citySlug:"coconut-creek",isCoastal:!1,hoaCommon:!0})}export{s as default};
