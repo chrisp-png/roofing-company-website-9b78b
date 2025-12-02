@@ -93,9 +93,10 @@ export default function GlobalSchema() {
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/allphaseusa",
-        "https://www.instagram.com/allphaseusa",
-        "https://www.youtube.com/allphaseusa",
+        "https://www.facebook.com/AllPhaseConstructionUsA",
+        "https://www.instagram.com/all_phase_construction_usa/",
+        "https://www.youtube.com/@allphaseconstructionusa5626",
+        "https://www.linkedin.com/company/all-phase-construction-usa-llc",
         "https://g.co/kgs/5gnq7v"
       ],
       "slogan": "Dual-Licensed Roofing & General Contractor",

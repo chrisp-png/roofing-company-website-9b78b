@@ -52,8 +52,52 @@ export default function FooterNew() {
           </div>
         </div>
 
-        <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-300">
-          <p>&copy; {new Date().getFullYear()} All Phase Construction USA, LLC. All rights reserved.</p>
+        <div className="border-t border-neutral-800 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-neutral-400 text-sm">
+              &copy; {new Date().getFullYear()} All Phase Construction USA, LLC. All rights reserved.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-4 text-sm">
+              <span className="text-neutral-400">Follow us:</span>
+              <a
+                href="https://www.facebook.com/AllPhaseConstructionUsA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-200 hover:text-red-500 transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/all_phase_construction_usa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-200 hover:text-red-500 transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.youtube.com/@allphaseconstructionusa5626"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-200 hover:text-red-500 transition-colors"
+                aria-label="Subscribe on YouTube"
+              >
+                YouTube
+              </a>
+              <a
+                href="https://www.linkedin.com/company/all-phase-construction-usa-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-200 hover:text-red-500 transition-colors"
+                aria-label="Connect on LinkedIn"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
