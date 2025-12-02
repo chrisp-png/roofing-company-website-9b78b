@@ -1,0 +1,297 @@
+export interface CitySpecificInfo {
+  cityName: string;
+  citySlug: string;
+  county: string;
+  zipCodes: string[];
+  isCoastal: boolean;
+  hoaCommon: boolean;
+  buildingDepartment: string;
+  permitNotes: string;
+  commonRoofTypes: string[];
+  architecturalStyle: string;
+  hvhzZone: boolean;
+  insuranceConsiderations: string;
+}
+
+export const citySpecificData: Record<string, CitySpecificInfo> = {
+  'boca-raton': {
+    cityName: 'Boca Raton',
+    citySlug: 'boca-raton',
+    county: 'Palm Beach County',
+    zipCodes: ['33427', '33428', '33431', '33432', '33433', '33434', '33486', '33487', '33488', '33496', '33497', '33498'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Boca Raton Building Services Division',
+    permitNotes: 'Strict architectural review requirements in most communities. All coastal construction requires HVHZ compliance and enhanced inspections.',
+    commonRoofTypes: ['Tile (Spanish and Flat)', 'Metal (Standing Seam)', 'Flat (Modified Bitumen for Commercial)'],
+    architecturalStyle: 'Mediterranean, Contemporary, and Luxury Custom Homes',
+    hvhzZone: true,
+    insuranceConsiderations: 'Premium reductions available with SWR underlayment and secondary water barriers. Wind mitigation critical for coastal properties.'
+  },
+  'boynton-beach': {
+    cityName: 'Boynton Beach',
+    citySlug: 'boynton-beach',
+    county: 'Palm Beach County',
+    zipCodes: ['33424', '33425', '33426', '33435', '33436', '33437'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Boynton Beach Building Division',
+    permitNotes: 'Coastal permitting requires HVHZ compliance. Many HOA communities with tile roof requirements.',
+    commonRoofTypes: ['Tile (Concrete and Clay)', 'Shingle (Architectural)', 'Metal (Commercial)'],
+    architecturalStyle: 'Mediterranean, Ranch, and Waterfront Properties',
+    hvhzZone: true,
+    insuranceConsiderations: 'Coastal properties benefit significantly from wind mitigation upgrades and impact-resistant materials.'
+  },
+  'coconut-creek': {
+    cityName: 'Coconut Creek',
+    citySlug: 'coconut-creek',
+    county: 'Broward County',
+    zipCodes: ['33063', '33066', '33073', '33097'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Coconut Creek Building Department',
+    permitNotes: 'Inland location but still requires Florida Building Code compliance. Many HOA communities with architectural guidelines.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat Concrete)', 'Metal'],
+    architecturalStyle: 'Planned Communities, Contemporary Single-Family',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation still provides insurance benefits despite inland location. Focus on impact resistance.'
+  },
+  'coral-springs': {
+    cityName: 'Coral Springs',
+    citySlug: 'coral-springs',
+    county: 'Broward County',
+    zipCodes: ['33065', '33071', '33075', '33076', '33077'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Coral Springs Building Department',
+    permitNotes: 'Well-planned city with extensive HOA requirements. Architectural review common in most neighborhoods.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat and Barrel)', 'Metal (Limited)'],
+    architecturalStyle: 'Planned Development, Mediterranean, Traditional',
+    hvhzZone: false,
+    insuranceConsiderations: 'HOA-approved materials often required. Wind mitigation provides substantial premium reductions.'
+  },
+  'deerfield-beach': {
+    cityName: 'Deerfield Beach',
+    citySlug: 'deerfield-beach',
+    county: 'Broward County',
+    zipCodes: ['33064', '33441', '33442', '33443'],
+    isCoastal: true,
+    hoaCommon: false,
+    buildingDepartment: 'Deerfield Beach Building Department',
+    permitNotes: 'Coastal permitting requires HVHZ compliance for properties east of Federal Highway. Mixed residential and commercial.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Concrete)', 'Flat (TPO and Modified)'],
+    architecturalStyle: 'Beach Cottage, Mediterranean, Mid-Century',
+    hvhzZone: true,
+    insuranceConsiderations: 'Coastal exposure demands wind mitigation. Secondary water barriers critical for insurance approval.'
+  },
+  'delray-beach': {
+    cityName: 'Delray Beach',
+    citySlug: 'delray-beach',
+    county: 'Palm Beach County',
+    zipCodes: ['33444', '33445', '33446', '33447', '33448', '33483', '33484'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Delray Beach Building Department',
+    permitNotes: 'Historic districts require special architectural approval. Coastal areas mandate HVHZ compliance.',
+    commonRoofTypes: ['Tile (Spanish and Flat)', 'Metal (Standing Seam)', 'Shingle (Limited)'],
+    architecturalStyle: 'Historic Mediterranean, Beach Contemporary, Luxury Estates',
+    hvhzZone: true,
+    insuranceConsiderations: 'Premium locations require premium materials. Wind mitigation essential for coastal properties.'
+  },
+  'fort-lauderdale': {
+    cityName: 'Fort Lauderdale',
+    citySlug: 'fort-lauderdale',
+    county: 'Broward County',
+    zipCodes: ['33301', '33304', '33305', '33306', '33308', '33309', '33311', '33312', '33313', '33315', '33316', '33317', '33319', '33321', '33323', '33324', '33325', '33326', '33328', '33334', '33335', '33351'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Fort Lauderdale Building Services',
+    permitNotes: 'Large jurisdiction with strict HVHZ requirements. Waterfront properties require additional flood compliance.',
+    commonRoofTypes: ['Tile (All Types)', 'Metal (Standing Seam)', 'Flat (IB PVC, TPO)', 'Shingle (Architectural)'],
+    architecturalStyle: 'Mediterranean, Contemporary, Waterfront Modern, Historic',
+    hvhzZone: true,
+    insuranceConsiderations: 'Critical wind mitigation zone. Insurance savings of $500-$6,500 annually with proper documentation.'
+  },
+  'highland-beach': {
+    cityName: 'Highland Beach',
+    citySlug: 'highland-beach',
+    county: 'Palm Beach County',
+    zipCodes: ['33487'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Highland Beach Building Department',
+    permitNotes: 'Exclusive town with stringent architectural standards. All properties subject to HVHZ requirements.',
+    commonRoofTypes: ['Tile (Spanish)', 'Metal (Standing Seam)', 'Slate (Limited)'],
+    architecturalStyle: 'Luxury Mediterranean, Coastal Contemporary',
+    hvhzZone: true,
+    insuranceConsiderations: 'Premium materials expected. Full wind mitigation documentation required by most insurance carriers.'
+  },
+  'hollywood': {
+    cityName: 'Hollywood',
+    citySlug: 'hollywood',
+    county: 'Broward County',
+    zipCodes: ['33019', '33020', '33021', '33023', '33024', '33025', '33026', '33027', '33028', '33029', '33081', '33083', '33084'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Hollywood Building Department',
+    permitNotes: 'Large coastal city with HVHZ requirements. Historic districts have additional architectural review.',
+    commonRoofTypes: ['Tile (Concrete and Clay)', 'Shingle (Architectural)', 'Flat (Modified Bitumen)'],
+    architecturalStyle: 'Mediterranean, Art Deco, Mid-Century, Beach Bungalow',
+    hvhzZone: true,
+    insuranceConsiderations: 'Coastal exposure requires wind mitigation. Historic areas may have material restrictions.'
+  },
+  'lake-worth-beach': {
+    cityName: 'Lake Worth Beach',
+    citySlug: 'lake-worth-beach',
+    county: 'Palm Beach County',
+    zipCodes: ['33460', '33461', '33463', '33467'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Lake Worth Beach Building Department',
+    permitNotes: 'Coastal city with HVHZ requirements. Diverse housing stock from historic to new construction.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Concrete)', 'Metal (Commercial)'],
+    architecturalStyle: 'Historic Bungalow, Mediterranean, Beach Contemporary',
+    hvhzZone: true,
+    insuranceConsiderations: 'Wind mitigation critical for insurance affordability. Older homes benefit most from modern roofing upgrades.'
+  },
+  'lighthouse-point': {
+    cityName: 'Lighthouse Point',
+    citySlug: 'lighthouse-point',
+    county: 'Broward County',
+    zipCodes: ['33064', '33074'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'Lighthouse Point Building Department',
+    permitNotes: 'Small waterfront city with strict building standards. All properties subject to HVHZ compliance.',
+    commonRoofTypes: ['Tile (Spanish and Flat)', 'Metal (Standing Seam)', 'Shingle (Impact-Rated)'],
+    architecturalStyle: 'Waterfront Mediterranean, Contemporary',
+    hvhzZone: true,
+    insuranceConsiderations: 'Premium waterfront location demands superior wind mitigation and secondary water barriers.'
+  },
+  'margate': {
+    cityName: 'Margate',
+    citySlug: 'margate',
+    county: 'Broward County',
+    zipCodes: ['33063', '33065', '33066', '33068', '33073', '33093'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Margate Building Department',
+    permitNotes: 'Inland location with standard Florida Building Code requirements. Many HOA communities.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat Concrete)', 'Metal (Limited)'],
+    architecturalStyle: 'Planned Communities, Traditional Ranch, Contemporary',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation provides insurance benefits. Impact resistance important despite inland location.'
+  },
+  'oakland-park': {
+    cityName: 'Oakland Park',
+    citySlug: 'oakland-park',
+    county: 'Broward County',
+    zipCodes: ['33308', '33309', '33310', '33311', '33334'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Oakland Park Building Department',
+    permitNotes: 'Urban location with diverse property types. Standard Florida Building Code compliance required.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Concrete)', 'Flat (TPO for Commercial)'],
+    architecturalStyle: 'Urban Single-Family, Multi-Family, Mixed Commercial',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation and impact resistance provide meaningful insurance savings.'
+  },
+  'parkland': {
+    cityName: 'Parkland',
+    citySlug: 'parkland',
+    county: 'Broward County',
+    zipCodes: ['33067', '33076'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Parkland Building Department',
+    permitNotes: 'Master-planned community with extensive architectural guidelines. Most properties in HOAs.',
+    commonRoofTypes: ['Tile (Flat and Barrel Concrete)', 'Shingle (Architectural)', 'Metal (Limited)'],
+    architecturalStyle: 'Planned Development, Mediterranean, Contemporary Estate',
+    hvhzZone: false,
+    insuranceConsiderations: 'HOA compliance critical. Wind mitigation upgrades provide significant insurance savings.'
+  },
+  'plantation': {
+    cityName: 'Plantation',
+    citySlug: 'plantation',
+    county: 'Broward County',
+    zipCodes: ['33311', '33312', '33313', '33317', '33322', '33323', '33324', '33325', '33326'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Plantation Building Department',
+    permitNotes: 'Large planned city with HOA requirements in most neighborhoods. Diverse property mix.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat Concrete)', 'Metal (Limited)', 'Flat (Commercial)'],
+    architecturalStyle: 'Planned Development, Traditional, Contemporary',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation highly beneficial. Impact-resistant materials preferred by insurance carriers.'
+  },
+  'pompano-beach': {
+    cityName: 'Pompano Beach',
+    citySlug: 'pompano-beach',
+    county: 'Broward County',
+    zipCodes: ['33060', '33061', '33062', '33063', '33064', '33065', '33066', '33067', '33069', '33071', '33072', '33073', '33074', '33075', '33076', '33077'],
+    isCoastal: true,
+    hoaCommon: false,
+    buildingDepartment: 'Pompano Beach Building Department',
+    permitNotes: 'Large coastal city with HVHZ requirements for coastal properties. Diverse residential and commercial stock.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Concrete)', 'Flat (TPO and Modified)', 'Metal (Commercial)'],
+    architecturalStyle: 'Beach Cottage, Mediterranean, Mid-Century, Contemporary',
+    hvhzZone: true,
+    insuranceConsiderations: 'Coastal areas require comprehensive wind mitigation. Older properties benefit from modern upgrades.'
+  },
+  'sunrise': {
+    cityName: 'Sunrise',
+    citySlug: 'sunrise',
+    county: 'Broward County',
+    zipCodes: ['33313', '33319', '33321', '33322', '33323', '33325', '33326', '33351'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Sunrise Building Department',
+    permitNotes: 'Large inland city with standard Florida Building Code requirements. Many HOA communities.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat Concrete)', 'Flat (Commercial)'],
+    architecturalStyle: 'Planned Development, Contemporary, Traditional',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation provides substantial insurance benefits. Impact resistance recommended.'
+  },
+  'tamarac': {
+    cityName: 'Tamarac',
+    citySlug: 'tamarac',
+    county: 'Broward County',
+    zipCodes: ['33319', '33320', '33321', '33323'],
+    isCoastal: false,
+    hoaCommon: true,
+    buildingDepartment: 'Tamarac Building Department',
+    permitNotes: 'Planned community with extensive HOA involvement. Standard Florida Building Code compliance.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Flat Concrete)', 'Metal (Limited)'],
+    architecturalStyle: 'Planned Development, 55+ Communities, Traditional',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation critical for insurance affordability in 55+ communities.'
+  },
+  'west-palm-beach': {
+    cityName: 'West Palm Beach',
+    citySlug: 'west-palm-beach',
+    county: 'Palm Beach County',
+    zipCodes: ['33401', '33403', '33404', '33405', '33406', '33407', '33409', '33411', '33412', '33413', '33415', '33417', '33418'],
+    isCoastal: true,
+    hoaCommon: true,
+    buildingDepartment: 'West Palm Beach Building Division',
+    permitNotes: 'Large jurisdiction with HVHZ requirements for coastal properties. Historic districts require special approval.',
+    commonRoofTypes: ['Tile (All Types)', 'Metal (Standing Seam)', 'Shingle (Architectural)', 'Flat (IB PVC, TPO)'],
+    architecturalStyle: 'Historic Mediterranean, Contemporary, Urban Mixed-Use, Luxury Estates',
+    hvhzZone: true,
+    insuranceConsiderations: 'Wind mitigation essential. Premium reductions vary significantly based on proximity to water.'
+  },
+  'wilton-manors': {
+    cityName: 'Wilton Manors',
+    citySlug: 'wilton-manors',
+    county: 'Broward County',
+    zipCodes: ['33305', '33311', '33334'],
+    isCoastal: false,
+    hoaCommon: false,
+    buildingDepartment: 'Wilton Manors Building Department',
+    permitNotes: 'Small urban city with diverse historic and modern properties. Standard Florida Building Code compliance.',
+    commonRoofTypes: ['Shingle (Architectural)', 'Tile (Limited)', 'Flat (Modified Bitumen)'],
+    architecturalStyle: 'Historic Bungalow, Urban Contemporary, Mid-Century',
+    hvhzZone: false,
+    insuranceConsiderations: 'Wind mitigation provides insurance benefits. Historic properties may have material constraints.'
+  }
+};
