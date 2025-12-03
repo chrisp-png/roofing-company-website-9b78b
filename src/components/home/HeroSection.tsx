@@ -7,42 +7,14 @@ export default function HeroSection() {
     <section className="relative bg-black min-h-[600px] flex items-center">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-red-950/30 z-10"></div>
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcSet="/images/hero-mobile.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 768px)"
-            srcSet="/images/hero-mobile.jpg"
-            type="image/jpeg"
-          />
-          <source
-            media="(max-width: 1280px)"
-            srcSet="/images/hero-desktop-1280.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 1280px)"
-            srcSet="/images/hero-desktop-1280.jpg"
-            type="image/jpeg"
-          />
-          <source
-            srcSet="/images/hero-desktop-1920.webp"
-            type="image/webp"
-          />
-          <img
-            src="/images/hero-desktop-1920.jpg"
-            alt="Professional roofing"
-            className="w-full h-full object-cover opacity-40"
-            fetchpriority="high"
-            loading="eager"
-            decoding="async"
-            width="1920"
-            height="1280"
-          />
-        </picture>
+        <img
+          src="/images/projects/Clay tile drone shot-Boca Raton.JPG"
+          alt="All Phase Construction USA luxury tile roof installation in Boca Raton, Florida - aerial view of completed roofing project"
+          className="w-full h-full object-cover opacity-40"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
