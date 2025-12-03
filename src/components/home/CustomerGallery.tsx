@@ -16,7 +16,7 @@ const customerProjects: CustomerProject[] = [
     quote: 'Our new tile roof is absolutely stunning. Worth every penny!',
     city: 'Boca Raton',
     roofType: 'tile',
-    imageUrl: '/images/projects/Clay tile install2- Boca Raton.JPG',
+    imageUrl: '/images/projects/Standing seam metal roof.jpg',
     alt: 'Tile roof installation in Boca Raton, Florida – The Martinez Family',
     rating: 5
   },
@@ -126,8 +126,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Our HOA was impressed with the quality and professionalism.',
     city: 'Parkland',
     roofType: 'hoa',
-    imageUrl: '/images/projects/Standing seam metal roof.jpg',
-    alt: 'HOA multi-family roof replacement in Parkland, Florida – The Anderson Family',
+    imageUrl: '/images/projects/Morrison Tile Roof.jpg',
+    alt: 'Beautiful tile roof installation in Parkland, Florida – The Anderson Family',
     rating: 5
   }
 ];
