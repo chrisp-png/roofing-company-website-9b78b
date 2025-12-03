@@ -86,8 +86,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The foam adhesive attachment is a game-changer for wind resistance.',
     city: 'Broward County',
     roofType: 'tile',
-    imageUrl: '/images/projects/clay tile install3-Boca Raton.JPG',
-    alt: 'Hurricane-rated tile roof in Broward County, Florida – Michael Stevens',
+    imageUrl: '/images/projects/Graham and happy customer.jpg',
+    alt: 'All Phase Construction USA representative Graham with satisfied customer Michael Stevens after hurricane-rated tile roof installation in Broward County, Florida',
     rating: 5
   },
   {
