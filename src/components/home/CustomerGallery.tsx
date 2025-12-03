@@ -106,8 +106,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The wind mitigation inspection saved us hundreds on insurance.',
     city: 'Delray Beach',
     roofType: 'wind_mitigation',
-    imageUrl: '/images/projects/Graham and happy customer 4.JPG',
-    alt: 'All Phase Construction USA representative Graham with satisfied customer after wind mitigation roof upgrade in Delray Beach, Florida – James Patterson',
+    imageUrl: '/images/projects/Karl and Happy customer 8.JPEG',
+    alt: 'All Phase Construction USA representative Karl with satisfied customer after wind mitigation roof upgrade in Delray Beach, Florida – James Patterson',
     rating: 5
   },
   {
