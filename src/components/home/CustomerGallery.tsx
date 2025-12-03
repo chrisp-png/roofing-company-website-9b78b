@@ -46,8 +46,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Impact-rated shingles give us peace of mind during hurricane season.',
     city: 'Pompano Beach',
     roofType: 'shingle',
-    imageUrl: '/images/projects/Graham and happy customer 3.JPG',
-    alt: 'Shingle roof installation in Pompano Beach, Florida – Jennifer Rodriguez',
+    imageUrl: '/images/projects/Karl and happy customer 5.JPEG',
+    alt: 'All Phase Construction USA representative Karl with satisfied customer after shingle roof installation in Pompano Beach, Florida – Jennifer Rodriguez',
     rating: 5
   },
   {
@@ -67,7 +67,7 @@ const customerProjects: CustomerProject[] = [
     city: 'Palm Beach County',
     roofType: 'shingle',
     imageUrl: '/images/projects/Graham and happy customer 2.jpg',
-    alt: 'Shingle roof installation in Palm Beach County, Florida – The Thompson Family',
+    alt: 'All Phase Construction USA representative Graham with satisfied customer after shingle roof installation in Palm Beach County, Florida – The Thompson Family',
     rating: 5
   },
   {
@@ -96,8 +96,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'Professional metal roof installation with attention to every detail.',
     city: 'Palm Beach County',
     roofType: 'metal',
-    imageUrl: '/images/projects/customer-testimonial-indoor.jpg',
-    alt: 'Standing seam metal roof in Palm Beach County, Florida – Sarah Martinez',
+    imageUrl: '/images/projects/Karl and Happy customer 7.JPEG',
+    alt: 'All Phase Construction USA representative Karl with satisfied customer after metal roof installation in Palm Beach County, Florida – Sarah Martinez',
     rating: 5
   },
   {
@@ -106,8 +106,8 @@ const customerProjects: CustomerProject[] = [
     quote: 'The wind mitigation inspection saved us hundreds on insurance.',
     city: 'Delray Beach',
     roofType: 'wind_mitigation',
-    imageUrl: '/images/projects/customer-testimonial-outdoor.jpg',
-    alt: 'Wind mitigation roof upgrade in Delray Beach, Florida – James Patterson',
+    imageUrl: '/images/projects/Graham and happy customer 4.JPG',
+    alt: 'All Phase Construction USA representative Graham with satisfied customer after wind mitigation roof upgrade in Delray Beach, Florida – James Patterson',
     rating: 5
   },
   {
