@@ -52,12 +52,12 @@ const customerProjects: CustomerProject[] = [
   },
   {
     id: '5',
-    name: 'Coral Springs Business Park',
+    name: 'Hilton Home 2 Suites Pompano Beach',
     quote: 'Our commercial flat roof installation was completed on time and on budget.',
-    city: 'Coral Springs',
+    city: 'Pompano Beach',
     roofType: 'flat',
     imageUrl: '/images/projects/Torch applying cap sheet.jpg',
-    alt: 'Commercial flat roof in Coral Springs, Florida – Coral Springs Business Park',
+    alt: 'Commercial flat roof at Hilton Home 2 Suites in Pompano Beach, Florida',
     rating: 5
   },
   {
