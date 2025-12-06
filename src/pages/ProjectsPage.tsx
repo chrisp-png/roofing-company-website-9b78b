@@ -480,19 +480,123 @@ const PROJECT_GALLERY: ProjectGalleryItem[] = [
   },
   {
     id: 'p059',
-    imageSrc: '/images/projects/project-59.jpg',
-    alt: 'Metal roof in Lighthouse Point',
-    city: 'Lighthouse Point',
-    roofType: 'Aluminum Roof',
-    description: 'Coastal aluminum roofing'
+    imageSrc: '/images/projects/031-parkland-metal-roof-installation-all-phase-usa.jpg',
+    alt: 'Metal roof installation project completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Metal Roof Installation',
+    description: 'Mechanically seamed metal roof installation providing superior wind resistance.'
   },
   {
     id: 'p060',
-    imageSrc: '/images/projects/project-60.jpg',
-    alt: 'Tile roof in Sea Ranch Lakes',
-    city: 'Sea Ranch Lakes',
-    roofType: 'Mediterranean Tile',
-    description: 'Luxury Mediterranean tile roof'
+    imageSrc: '/images/projects/032-parkland-flat-roof-repair-all-phase-usa.jpg',
+    alt: 'Flat roof repair completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Flat Roof Repair',
+    description: 'Flat roof repair strengthening waterproofing and improving drainage.'
+  },
+  {
+    id: 'p061',
+    imageSrc: '/images/projects/033-parkland-roof-coating-all-phase-usa.jpg',
+    alt: 'Roof coating applied in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Roof Coating',
+    description: 'Reflective roof coating applied to extend roof life and improve energy efficiency.'
+  },
+  {
+    id: 'p062',
+    imageSrc: '/images/projects/034-parkland-soffit-repair-all-phase-usa.jpg',
+    alt: 'Soffit repair project in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Soffit Repair',
+    description: 'Soffit repair enhancing ventilation and improving exterior appearance.'
+  },
+  {
+    id: 'p063',
+    imageSrc: '/images/projects/035-parkland-attic-ventilation-all-phase-usa.jpg',
+    alt: 'Attic ventilation improvement performed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Attic Ventilation',
+    description: 'Attic ventilation upgrades improving airflow and reducing attic heat.'
+  },
+  {
+    id: 'p064',
+    imageSrc: '/images/projects/036-parkland-roof-inspection-all-phase-usa.jpg',
+    alt: 'Professional roof inspection completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Roof Inspection',
+    description: 'Comprehensive roof inspection identifying maintenance and repair needs.'
+  },
+  {
+    id: 'p065',
+    imageSrc: '/images/projects/037-parkland-shingle-repair-all-phase-usa.jpg',
+    alt: 'Shingle roof repair performed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Shingle Roof Repair',
+    description: 'Shingle repair addressing damaged sections and improving roof performance.'
+  },
+  {
+    id: 'p066',
+    imageSrc: '/images/projects/038-parkland-shingle-replacement-all-phase-usa.jpg',
+    alt: 'Asphalt shingle replacement project in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Shingle Roof Replacement',
+    description: 'Full replacement of aging asphalt shingles with high-performance materials.'
+  },
+  {
+    id: 'p067',
+    imageSrc: '/images/projects/039-parkland-roof-tarp-installation-all-phase-usa.jpg',
+    alt: 'Emergency roof tarp installation in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Emergency Tarp Installation',
+    description: 'Emergency tarp installation to secure property and stop active leaks.'
+  },
+  {
+    id: 'p068',
+    imageSrc: '/images/projects/040-parkland-skylight-repair-all-phase-usa.jpg',
+    alt: 'Skylight repair performed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Skylight Repair',
+    description: 'Repair of leaking or damaged skylights to restore waterproofing.'
+  },
+  {
+    id: 'p069',
+    imageSrc: '/images/projects/041-parkland-skylight-installation-all-phase-usa.jpg',
+    alt: 'Skylight installation project in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Skylight Installation',
+    description: 'New skylight installation adding natural light to interior spaces.'
+  },
+  {
+    id: 'p070',
+    imageSrc: '/images/projects/042-parkland-soffit-cleaning-all-phase-usa.jpg',
+    alt: 'Soffit cleaning project in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Soffit Cleaning',
+    description: 'Soffit cleaning improving appearance and reducing mildew buildup.'
+  },
+  {
+    id: 'p071',
+    imageSrc: '/images/projects/043-parkland-fascia-repair-all-phase-usa.jpg',
+    alt: 'Fascia repair completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Fascia Repair',
+    description: 'Fascia board repair reinforcing roof edge structure and aesthetics.'
+  },
+  {
+    id: 'p072',
+    imageSrc: '/images/projects/044-parkland-soffit-and-fascia-all-phase-usa.jpg',
+    alt: 'Soffit and fascia replacement in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Soffit & Fascia Replacement',
+    description: 'Full replacement of soffit and fascia materials improving ventilation and appearance.'
+  },
+  {
+    id: 'p073',
+    imageSrc: '/images/projects/045-parkland-gutter-installation-all-phase-usa.jpg',
+    alt: 'Gutter installation completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Gutter Installation',
+    description: 'New gutter installation improving roof drainage and protecting the home foundation.'
   }
 ];
 
