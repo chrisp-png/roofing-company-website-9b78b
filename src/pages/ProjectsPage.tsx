@@ -597,6 +597,62 @@ const PROJECT_GALLERY: ProjectGalleryItem[] = [
     city: 'Parkland, FL',
     roofType: 'Gutter Installation',
     description: 'New gutter installation improving roof drainage and protecting the home foundation.'
+  },
+  {
+    id: 'p074',
+    imageSrc: '/images/projects/046-parkland-gutter-cleaning-all-phase-usa.jpg',
+    alt: 'Gutter cleaning service performed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Gutter Cleaning',
+    description: 'Comprehensive gutter cleaning improving water flow and preventing clog-related leaks.'
+  },
+  {
+    id: 'p075',
+    imageSrc: '/images/projects/047-parkland-pressure-cleaning-all-phase-usa.jpg',
+    alt: 'Roof pressure cleaning completed in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Roof Pressure Cleaning',
+    description: 'Pressure cleaning performed to remove mildew, dirt, and algae buildup from roof surfaces.'
+  },
+  {
+    id: 'p076',
+    imageSrc: '/images/projects/048-parkland-tile-roof-cleaning-all-phase-usa.jpg',
+    alt: 'Tile roof cleaning service in Parkland, Florida by All Phase Construction USA.',
+    city: 'Parkland, FL',
+    roofType: 'Tile Roof Cleaning',
+    description: 'Tile roof cleaning restoring original color and removing environmental staining.'
+  },
+  {
+    id: 'p077',
+    imageSrc: '/images/projects/049-coral-springs-tile-roof-repair-all-phase-usa.jpg',
+    alt: 'Tile roof repair project completed in Coral Springs, Florida by All Phase Construction USA.',
+    city: 'Coral Springs, FL',
+    roofType: 'Tile Roof Repair',
+    description: 'Tile repair addressing broken tiles and improving waterproofing in Coral Springs.'
+  },
+  {
+    id: 'p078',
+    imageSrc: '/images/projects/050-coral-springs-shingle-roof-repair-all-phase-usa.jpg',
+    alt: 'Shingle roof repair project in Coral Springs, Florida by All Phase Construction USA.',
+    city: 'Coral Springs, FL',
+    roofType: 'Shingle Roof Repair',
+    description: 'Shingle repairs completed to stop active leaks and reinforce roof protection.'
+  },
+  {
+    id: 'p079',
+    imageSrc: '/images/projects/051-boca-raton-commercial-roof-repair-all-phase-usa.jpg',
+    alt: 'Commercial roof repair performed in Boca Raton, Florida by All Phase Construction USA.',
+    city: 'Boca Raton, FL',
+    roofType: 'Commercial Roof Repair',
+    description: 'Commercial flat roof repair restoring waterproofing integrity in Boca Raton.'
+  },
+  {
+    id: 'p080',
+    imageSrc: '/images/projects/052-boca-raton-commercial-roof-coating-all-phase-usa.jpg',
+    alt: 'Commercial roof coating applied in Boca Raton, Florida by All Phase Construction USA.',
+    city: 'Boca Raton, FL',
+    roofType: 'Commercial Roof Coating',
+    description: 'Reflective commercial roof coating system installed to extend roof life and improve energy efficiency.'
   }
 ];
 
