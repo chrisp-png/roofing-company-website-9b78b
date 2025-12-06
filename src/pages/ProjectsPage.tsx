@@ -237,126 +237,126 @@ const PROJECT_GALLERY: ProjectGalleryItem[] = [
     roofType: 'Commercial',
     description: 'Materials staging for commercial project'
   },
-  // Placeholder entries for additional 32+ projects
+  // Real project entries from Davie and Fort Lauderdale
   {
     id: 'p029',
-    imageSrc: '/images/projects/project-29.jpg',
-    alt: 'Shingle roof replacement in Coconut Creek',
-    city: 'Coconut Creek',
-    roofType: 'Architectural Shingles',
-    description: 'Impact-resistant shingle roof'
+    imageSrc: '/images/projects/001-fort-lauderdale-commercial-roof-restoration-all-phase-usa.jpg',
+    alt: 'Commercial roof restoration at an aviation facility in Fort Lauderdale, Florida by All Phase Construction USA.',
+    city: 'Fort Lauderdale, FL',
+    roofType: 'Commercial Roof Restoration',
+    description: 'Aviation facility roof restoration with premium commercial coating system.'
   },
   {
     id: 'p030',
-    imageSrc: '/images/projects/project-30.jpg',
-    alt: 'Metal roof installation in Lighthouse Point',
-    city: 'Lighthouse Point',
-    roofType: 'Standing Seam Metal',
-    description: 'Waterfront metal roof system'
+    imageSrc: '/images/projects/002-davie-flat-tile-roof-all-phase-usa.jpg',
+    alt: 'Flat tile roof project in Davie, Florida completed by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Flat Tile Roof',
+    description: 'Flat tile roof project performed in Davie, improving water shedding and curb appeal.'
   },
   {
     id: 'p031',
-    imageSrc: '/images/projects/project-31.jpg',
-    alt: 'Tile roof in Highland Beach',
-    city: 'Highland Beach',
-    roofType: 'Spanish Tile',
-    description: 'Mediterranean style tile roof'
+    imageSrc: '/images/projects/003-davie-tile-roof-replacement-all-phase-usa.jpg',
+    alt: 'Tile roof replacement with upgraded underlayment in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Tile Roof Replacement',
+    description: 'Full tile roof replacement with upgraded waterproofing underlayment.'
   },
   {
     id: 'p032',
-    imageSrc: '/images/projects/project-32.jpg',
-    alt: 'Commercial roof in Margate',
-    city: 'Margate',
-    roofType: 'TPO Membrane',
-    description: 'Commercial TPO roofing system'
+    imageSrc: '/images/projects/004-davie-roof-flashing-repair-all-phase-usa.jpg',
+    alt: 'Roof flashing repair performed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Roof Flashing Repair',
+    description: 'Professional roof flashing repair to prevent water intrusion.'
   },
   {
     id: 'p033',
-    imageSrc: '/images/projects/project-33.jpg',
-    alt: 'Flat roof replacement in Tamarac',
-    city: 'Tamarac',
-    roofType: 'Modified Bitumen',
-    description: 'Flat roof replacement project'
+    imageSrc: '/images/projects/005-davie-tile-roof-cleaning-all-phase-usa.jpg',
+    alt: 'Tile roof cleaning and maintenance in Davie, Florida using crane access by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Tile Roof Cleaning',
+    description: 'Tile roof cleaning using crane access for safe and thorough service.'
   },
   {
     id: 'p034',
-    imageSrc: '/images/projects/project-34.jpg',
-    alt: 'Shingle roof in Wilton Manors',
-    city: 'Wilton Manors',
-    roofType: 'Dimensional Shingles',
-    description: 'High-wind rated shingle system'
+    imageSrc: '/images/projects/006-davie-tile-roof-repair-all-phase-usa.jpg',
+    alt: 'Tile roof repair and maintenance in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Tile Roof Repair',
+    description: 'Tile roof repair addressing cracked tiles and underlayment exposure.'
   },
   {
     id: 'p035',
-    imageSrc: '/images/projects/project-35.jpg',
-    alt: 'Metal roof in Oakland Park',
-    city: 'Oakland Park',
-    roofType: 'Metal Panels',
-    description: 'Energy-efficient metal roof'
+    imageSrc: '/images/projects/007-davie-flat-roof-repair-all-phase-usa.jpg',
+    alt: 'Flat roof repair work completed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Flat Roof Repair',
+    description: 'Flat roof repair to improve drainage and waterproofing integrity.'
   },
   {
     id: 'p036',
-    imageSrc: '/images/projects/project-36.jpg',
-    alt: 'Tile roof replacement in Sunrise',
-    city: 'Sunrise',
-    roofType: 'Concrete Tile',
-    description: 'Complete tile roof replacement'
+    imageSrc: '/images/projects/008-davie-barrel-tile-roof-repair-all-phase-usa.jpg',
+    alt: 'Barrel tile roof repair completed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Barrel Tile Roof Repair',
+    description: 'Barrel tile roof repair restoring aesthetic and functional performance.'
   },
   {
     id: 'p037',
-    imageSrc: '/images/projects/project-37.jpg',
-    alt: 'Commercial roof in Plantation',
-    city: 'Plantation',
-    roofType: 'EPDM Rubber',
-    description: 'Commercial rubber roofing system'
+    imageSrc: '/images/projects/009-davie-tile-roof-leak-repair-all-phase-usa.jpg',
+    alt: 'Tile roof leak repair services performed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Tile Roof Leak Repair',
+    description: 'Tile roof leak repair to stop active water intrusion.'
   },
   {
     id: 'p038',
-    imageSrc: '/images/projects/project-38.jpg',
-    alt: 'Shingle roof in Hollywood',
-    city: 'Hollywood',
-    roofType: 'Impact Shingles',
-    description: 'Hurricane-resistant shingle roof'
+    imageSrc: '/images/projects/010-davie-tile-roof-leak-detection-all-phase-usa.jpg',
+    alt: 'Tile roof leak detection and diagnostic service in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Tile Roof Leak Detection',
+    description: 'Leak detection service for a tile roof identifying moisture pathways.'
   },
   {
     id: 'p039',
-    imageSrc: '/images/projects/project-39.jpg',
-    alt: 'Metal roof in Lake Worth Beach',
-    city: 'Lake Worth Beach',
-    roofType: 'Ribbed Metal',
-    description: 'Coastal metal roof installation'
+    imageSrc: '/images/projects/011-davie-shingle-roof-replacement-all-phase-usa.jpg',
+    alt: 'Shingle roof replacement project completed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Shingle Roof Replacement',
+    description: 'Full asphalt shingle roof replacement increasing durability and lifespan.'
   },
   {
     id: 'p040',
-    imageSrc: '/images/projects/project-40.jpg',
-    alt: 'Tile roof in West Palm Beach',
-    city: 'West Palm Beach',
-    roofType: 'Barrel Tile',
-    description: 'Classic barrel tile roof'
+    imageSrc: '/images/projects/012-davie-asphalt-shingle-repair-all-phase-usa.jpg',
+    alt: 'Asphalt shingle roof repair project in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Asphalt Shingle Repair',
+    description: 'Asphalt shingle repair restoring damaged sections of the roof.'
   },
   {
     id: 'p041',
-    imageSrc: '/images/projects/project-41.jpg',
-    alt: 'Commercial flat roof in Deerfield Beach',
-    city: 'Deerfield Beach',
-    roofType: 'PVC Membrane',
-    description: 'White PVC commercial roof'
+    imageSrc: '/images/projects/013-davie-shingle-roof-leak-repair-all-phase-usa.jpg',
+    alt: 'Shingle roof leak repair project in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Shingle Roof Leak Repair',
+    description: 'Leak repair on an asphalt shingle roof preventing further interior damage.'
   },
   {
     id: 'p042',
-    imageSrc: '/images/projects/project-42.jpg',
-    alt: 'Shingle roof in Coral Springs',
-    city: 'Coral Springs',
-    roofType: 'Premium Shingles',
-    description: 'Designer shingle roof system'
+    imageSrc: '/images/projects/014-davie-soffit-repair-all-phase-usa.jpg',
+    alt: 'Soffit repair project performed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Soffit Repair',
+    description: 'Soffit repair providing improved ventilation and aesthetic restoration.'
   },
   {
     id: 'p043',
-    imageSrc: '/images/projects/project-43.jpg',
-    alt: 'Metal roof in Parkland',
-    city: 'Parkland',
-    roofType: 'Standing Seam',
-    description: 'Luxury home metal roof'
+    imageSrc: '/images/projects/015-davie-soffit-and-fascia-repair-all-phase-usa.jpg',
+    alt: 'Soffit and fascia repair completed in Davie, Florida by All Phase Construction USA.',
+    city: 'Davie, FL',
+    roofType: 'Soffit & Fascia Repair',
+    description: 'Soffit and fascia repair reinforcing the roof edge structure.'
   },
   {
     id: 'p044',
