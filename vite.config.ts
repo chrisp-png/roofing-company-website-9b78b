@@ -32,8 +32,14 @@ export default defineConfig({
               return 'react-vendor';
             }
             if (id.includes('lucide-react')) {
-              return 'index.es';
+              return 'icons-vendor';
             }
+          }
+          if (id.includes('src/components/calculator')) {
+            return 'calculator';
+          }
+          if (id.includes('src/components/schema')) {
+            return 'schema';
           }
         },
         assetFileNames: (assetInfo) => {
@@ -52,10 +58,10 @@ export default defineConfig({
     },
     cssCodeSplit: true,
     minify: 'esbuild',
-    assetsInlineLimit: 4096,
+    assetsInlineLimit: 2048,
     target: 'es2020',
     reportCompressedSize: false,
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
     sourcemap: false,
     cssMinify: true,
   },
