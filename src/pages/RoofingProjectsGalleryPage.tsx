@@ -5,7 +5,7 @@ import ImageGallerySchema from '../components/schema/ImageGallerySchema';
 import FAQSchema from '../components/schema/FAQSchema';
 import ServiceAreaSchema from '../components/schema/ServiceAreaSchema';
 import { getAllServiceAreas } from '../data/serviceAreas';
-import { MapPin, Layers, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { MapPin, Layers, X, ChevronLeft, ChevronRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 interface ProjectImage {
   src: string;
@@ -494,6 +494,69 @@ export default function RoofingProjectsGalleryPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="bg-neutral-900/50 border-y border-neutral-800 py-12">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Follow Us for More Projects & Updates
+            </h2>
+            <p className="text-neutral-300 mb-8 max-w-2xl mx-auto">
+              Join thousands of followers for daily project photos, time-lapse videos, roofing education, customer testimonials, and exclusive promotions. See why we're South Florida's most trusted roofing contractor.
+            </p>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <a
+                href="https://www.facebook.com/AllPhaseConstructionUsA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-neutral-800 hover:bg-red-600 rounded-full flex items-center justify-center text-neutral-200 hover:text-white transition-all duration-200 shadow-lg hover:shadow-red-900/50 hover:scale-110"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/all_phase_construction_usa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-neutral-800 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-600 rounded-full flex items-center justify-center text-neutral-200 hover:text-white transition-all duration-200 shadow-lg hover:shadow-pink-900/50 hover:scale-110"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.youtube.com/@allphaseconstructionusa5626"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-neutral-800 hover:bg-red-600 rounded-full flex items-center justify-center text-neutral-200 hover:text-white transition-all duration-200 shadow-lg hover:shadow-red-900/50 hover:scale-110"
+                aria-label="Subscribe on YouTube"
+              >
+                <Youtube className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@allphaseusa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-neutral-800 hover:bg-black rounded-full flex items-center justify-center text-neutral-200 hover:text-white transition-all duration-200 shadow-lg hover:shadow-neutral-900/50 hover:scale-110"
+                aria-label="Follow us on TikTok"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/all-phase-construction-usa-llc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-neutral-800 hover:bg-blue-700 rounded-full flex items-center justify-center text-neutral-200 hover:text-white transition-all duration-200 shadow-lg hover:shadow-blue-900/50 hover:scale-110"
+                aria-label="Connect on LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+            </div>
+            <p className="text-sm text-neutral-400">
+              @all_phase_construction_usa | @allphaseusa
+            </p>
           </div>
         </div>
 
