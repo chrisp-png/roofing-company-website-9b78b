@@ -22,8 +22,8 @@ const imageList = [
   'project-metalroof-decorative-driveway.jpg',
   'project-white-metalroof-street.jpg',
   'Weldon house, Delray Beach.jpg',
-  '073-fort-lauderdale-new-shingle-roof-install-all-phase-usa.jpg.jpg',
-  '087-completed-tile-roof-delray-beach-all-phase-usa.jpg.jpg'
+  '073-fort-lauderdale-new-shingle-roof-install-all-phase-usa.jpg',
+  '087-completed-tile-roof-delray-beach-all-phase-usa.jpg'
 ];
 
 function parseImageMetadata(filename: string): { city: string; roofType: string; alt: string } {
