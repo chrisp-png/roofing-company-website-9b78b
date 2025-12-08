@@ -76,6 +76,7 @@ export default function AppRouter() {
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="gallery" element={<ProjectsPage />} />
             <Route path="roofing-projects" element={<RoofingProjectsGalleryPage />} />
+            <Route path="projects-gallery" element={<RoofingProjectsGalleryPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="roof-cost-calculator" element={<RoofCalculatorPage />} />
 
