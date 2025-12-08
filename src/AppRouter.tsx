@@ -15,6 +15,7 @@ const WindMitigationPage = lazy(() => import('./pages/WindMitigationPage'));
 const FinancingPage = lazy(() => import('./pages/FinancingPage'));
 const FinancingCalculatorPage = lazy(() => import('./pages/FinancingCalculatorPage'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
+const RoofingProjectsGalleryPage = lazy(() => import('./pages/RoofingProjectsGalleryPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogDetailPage = lazy(() => import('./pages/BlogDetailPage'));
@@ -74,6 +75,7 @@ export default function AppRouter() {
             <Route path="financing-calculator" element={<FinancingCalculatorPage />} />
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="gallery" element={<ProjectsPage />} />
+            <Route path="roofing-projects" element={<RoofingProjectsGalleryPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="roof-cost-calculator" element={<RoofCalculatorPage />} />
 
